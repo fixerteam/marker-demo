@@ -1,0 +1,12 @@
+{
+  "id": "ru_RU",
+  "locale": "ru-RU",
+  "values": {
+    "widgets": "виджеты",
+    "services": "сервисы",
+    "models": "модели",
+    "blocks": "блоки",
+    "bugs": "баги",
+    "settings": "настройки"
+  }
+}

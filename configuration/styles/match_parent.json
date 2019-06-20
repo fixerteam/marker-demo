@@ -1,0 +1,15 @@
+{
+  "name": "match_parent",
+  "type": "style",
+  "value": {
+      "self": [
+          {
+              "width": "100%",
+              "height": "100%"
+          }
+      ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

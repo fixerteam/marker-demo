@@ -1,0 +1,45 @@
+{
+  "name": "WidgetsModel",
+  "fields": {
+    "id": "integer",
+    "name": "string",
+    "compatibility": {
+      "web": "boolean",
+      "android": "boolean",
+      "ios": "boolean"
+    }
+  },
+  "storageType": "const",
+  "source": {
+    "values": [
+      {
+        "name": "Accordion",
+        "screen": "AccordionWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "accordionWidget"
+      },
+      {
+        "name": "Appbar",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "appbarWidget"
+      },
+      {
+        "name": "Autocomplete",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "autocompleteWidget"
+      }
+    ]
+  }
+}

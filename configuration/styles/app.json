@@ -1,0 +1,26 @@
+{
+  "name": "app",
+  "type": "theme",
+  "value": {
+    "root": {
+      "self": [
+        {
+          "textSecondary": "#757575",
+          "disabled": "#BDBDBD",
+          "background": "#FFFFFF",
+          "textPrimary": "#212121",
+          "accent": "#FFC107",
+          "darkPrimary": "#455A64",
+          "lightPrimary": "#CFD8DC",
+          "primary": "#607D8B"
+        }
+      ]
+    },
+    "button": {
+      "self": [{ "width": 150, "backgroundColor": "#607D8B" }]
+    }
+  },
+  "template": "default",
+  "id": "5a7aff96f2db98ca378b456e",
+  "uptime": 1560854364
+}

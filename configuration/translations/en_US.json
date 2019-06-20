@@ -1,0 +1,12 @@
+{
+  "id": "en_US",
+  "locale": "en-US",
+  "values": {
+    "widgets": "widgets",
+    "services": "services",
+    "models": "models",
+    "blocks": "blocks",
+    "bugs": "bugs",
+    "settings": "settings"
+  }
+}

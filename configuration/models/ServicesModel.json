@@ -1,0 +1,44 @@
+{
+  "name": "ServicesModel",
+  "fields": {
+    "id": "integer",
+    "name": "string",
+    "compatibility": {
+      "web": "boolean",
+      "android": "boolean",
+      "ios": "boolean"
+    }
+  },
+  "storageType": "const",
+  "source": {
+    "values": [
+      {
+        "name": "Api",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "apiService"
+      },
+      {
+        "name": "App",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "appService"
+      },
+      {
+        "name": "Assets",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "assetsService"
+      }
+    ]
+  }
+}

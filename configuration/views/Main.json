@@ -1,0 +1,78 @@
+{
+  "name": "Main",
+  "type": "view",
+  "entryPoint": true,
+  "public": true,
+  "styles": ["match_parent"],
+  "elements": [
+    {
+      "type": "appbar",
+      "title": "Blackhole",
+      "styles": [
+        {
+          "title": [
+            {
+              "textAlign": "center"
+            }
+          ]
+        }
+      ],
+      "elements": [
+        {
+          "title": "{settings}",
+          "displayType": "icon",
+          "icon": "settings-outline",
+          "id": "settings"
+        }
+      ],
+      "id": "mainAppbar"
+    },
+    {
+      "type": "bottomnavigation",
+      "styles": [
+        {
+          "tab": {
+            "label": [
+              {
+                "textTransform": "capitalize",
+                "fontSize": 10
+              }
+            ]
+          }
+        }
+      ],
+      "elements": [
+        {
+          "title": "{widgets}",
+          "screen": "WidgetsScreen",
+          "icon": "view-dashboard-outline",
+          "id": "widgetsScreen"
+        },
+        {
+          "title": "{services}",
+          "screen": "ServicesScreen",
+          "icon": "toolbox-outline",
+          "id": "servicesScreen"
+        },
+        {
+          "title": "{models}",
+          "icon": "database",
+          "id": "modelsScreen"
+        },
+        {
+          "title": "{blocks}",
+          "icon": "vector-combine",
+          "id": "blocksScreen"
+        },
+        {
+          "title": "{bugs}",
+          "icon": "alert-decagram-outline",
+          "id": "bugsScreen"
+        }
+      ],
+      "id": "mainNavigation"
+    }
+  ],
+  "id": "59ce4d2718985908008b456b",
+  "uptime": 1560946634
+}

@@ -1,0 +1,182 @@
+{
+  "name": "AccordionWidget",
+  "type": "view",
+  "styles": ["match_parent"],
+  "elements": [
+    {
+      "id": "appbar",
+      "type": "appbar",
+      "title": "Accordion",
+      "leftIcon": "arrow-left",
+      "styles": [
+        {
+          "title": [
+            {
+              "textAlign": "center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "orientation": "vertical",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": ["match_parent", "padding_all_16"],
+      "elements": [
+        {
+          "type": "accordion",
+          "title": "titleAccordion",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "100%"
+                }
+              ],
+              "header": [
+                {
+                  "borderWidth": 1,
+                  "borderColor": "#212121"
+                }
+              ],
+              "content": [
+                {
+                  "backgroundColor": "#E9E9E9"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "styles": ["padding_all_16", "match_parent"],
+              "scrollable": true,
+              "elements": [
+                {
+                  "type": "label",
+                  "id": "accordionContent",
+                  "styles": [
+                    "match_parent",
+                    {
+                      "self": [
+                        {
+                          "fontSize": 10
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "id": "mainAccordion"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "type": "button",
+              "title": "title1",
+              "id": "title1",
+              "styles": ["margin_all_16"]
+            },
+            {
+              "type": "button",
+              "title": "title2",
+              "id": "title2",
+              "styles": ["margin_all_16"]
+            }
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "type": "button",
+              "title": "show",
+              "id": "visibilityTrue",
+              "styles": ["margin_all_16"]
+            },
+            {
+              "type": "button",
+              "title": "hide",
+              "id": "visibilityFalse",
+              "styles": ["margin_all_16"]
+            }
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "type": "button",
+              "title": "expand",
+              "id": "expand",
+              "styles": ["margin_all_16"]
+            },
+            {
+              "type": "button",
+              "title": "collapse",
+              "id": "collapse",
+              "styles": ["margin_all_16"]
+            }
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "type": "button",
+              "title": "toggle",
+              "id": "toggle",
+              "styles": ["margin_all_16"]
+            },
+            {
+              "type": "button",
+              "title": "getAttrs",
+              "id": "getAttrsBtn",
+              "styles": ["margin_all_16"]
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "title": "themeStyle",
+          "elements": [
+            {
+              "type": "label",
+              "value": "themeStyleContent"
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "title": "nameStyle",
+          "elements": [
+            {
+              "type": "label",
+              "value": "nameStyleContent"
+            }
+          ]
+        },
+        {
+          "type": "accordion",
+          "title": "inlineStyle",
+          "elements": [
+            {
+              "type": "label",
+              "value": "inlineStyleContent"
+            }
+          ],
+          "id": "accordStyles"
+        }
+      ]
+    }
+  ]
+}
