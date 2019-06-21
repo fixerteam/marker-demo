@@ -1,3 +1,0 @@
-[submodule "proxy"]
-	path = proxy
-	url = git@git2.altarix.org:marm/proxy.git

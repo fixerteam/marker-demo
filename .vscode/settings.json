@@ -10,7 +10,6 @@
         "**/.DS_Store": true,
         "**/.eslintignore": true,
         "**/.git": true,
-        "**/.gitignore": true,
         "**/.gitkeep": true,
         "**/.hg": true,
         "**/.svn": true,
