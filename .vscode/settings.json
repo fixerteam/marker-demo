@@ -1,0 +1,23 @@
+{
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "eslint.autoFixOnSave": true,
+    "cSpell.language": "en, ru",
+    "files.associations": {
+        "*.js": "javascriptreact"
+    },
+    "files.exclude": {
+        "**/.DS_Store": true,
+        "**/.eslintignore": true,
+        "**/.git": true,
+        "**/.gitignore": true,
+        "**/.gitkeep": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "**/node_modules": true,
+        "**/package-lock.json": true
+    },
+    "files.autoSave": "onWindowChange",
+    "editor.tabSize": 2,
+}
