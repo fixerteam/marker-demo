@@ -1,0 +1,8 @@
+{
+  "name": "button_disabled_style",
+  "type": "style",
+  "value": { "self": [{ "backgroundColor": "#b1b1b1" }], "label": [{ "color": "#f3f3f3" }] },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

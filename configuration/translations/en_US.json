@@ -7,6 +7,7 @@
     "models": "models",
     "blocks": "blocks",
     "bugs": "bugs",
-    "settings": "settings"
+    "settings": "settings",
+    "attributes": "Attributes"
   }
 }

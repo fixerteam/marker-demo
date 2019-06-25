@@ -1,10 +1,11 @@
 {
-  "name": "margin_all_16",
+  "name": "margin_vertical_8",
   "type": "style",
   "value": {
     "self": [
       {
-        "margin": 16
+        "marginTop": 8,
+        "marginBottom": 8
       }
     ]
   },

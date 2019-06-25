@@ -39,6 +39,16 @@
           "web": true
         },
         "id": "autocompleteWidget"
+      },
+      {
+        "name": "Button",
+        "screen": "ButtonWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "buttonWidget"
       }
     ]
   }

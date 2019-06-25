@@ -1,0 +1,21 @@
+{
+  "name": "button_styled",
+  "type": "style",
+  "value": {
+    "self": [
+      {
+        "width": "100%",
+        "backgroundColor": "#8BC34A"
+      }
+    ],
+    "label": [
+      {
+        "color": "#f7f7f7",
+        "fontSize": 14
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

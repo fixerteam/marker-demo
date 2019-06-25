@@ -1,10 +1,10 @@
 {
-  "name": "margin_all_16",
+  "name": "width_full",
   "type": "style",
   "value": {
     "self": [
       {
-        "margin": 16
+        "width": "100%"
       }
     ]
   },

@@ -61,7 +61,7 @@ class AccordionWidget {
   }
 
   showAccordionAttrs() {
-    this.accordionContent.setText(`|${JSON.stringify(this.mainAccordion.getAttrs(), null, 4)}|`)
-    this.mainAccordion.expand()
+    // this.accordionContent.setText(`|${JSON.stringify(this.mainAccordion.getAttrs(), null, 4)}|`)
+    // this.mainAccordion.expand()
   }
 }

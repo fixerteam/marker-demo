@@ -1,10 +1,12 @@
 {
-  "name": "margin_all_16",
+  "name": "label_link",
   "type": "style",
   "value": {
     "self": [
       {
-        "margin": 16
+        "borderBottomWidth": 1,
+        "borderBottomColor": "#1976D2",
+        "color": "#1976D2"
       }
     ]
   },

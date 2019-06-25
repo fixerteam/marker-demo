@@ -15,9 +15,6 @@
           "primary": "#607D8B"
         }
       ]
-    },
-    "button": {
-      "self": [{ "width": 150, "backgroundColor": "#607D8B" }]
     }
   },
   "template": "default",

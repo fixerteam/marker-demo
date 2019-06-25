@@ -1,0 +1,219 @@
+{
+  "name": "ButtonWidget",
+  "type": "view",
+  "styles": ["match_parent"],
+  "elements": [
+    {
+      "id": "appbar",
+      "type": "appbar",
+      "title": "Button",
+      "leftIcon": "arrow-left",
+      "styles": [
+        {
+          "title": [
+            {
+              "textAlign": "center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": ["match_parent"],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "Документация.",
+          "styles": ["label_link"]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "При клике на кнопку отобразятся ее атрибуты вызовом метода getAttrs()"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            {
+              "self": [
+                {
+                  "justifyContent": "space-between",
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "id": "isLoadingCheckbox",
+                  "title": "loading"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "isReadOnlyCheckbox",
+                  "title": "readonly"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "visibilityCheckbox",
+                  "title": "visibility",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "button icon"
+                },
+                {
+                  "id": "iconRadioGroup",
+                  "type": "list",
+                  "displayType": "radioGroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "alarm",
+                      "title": "alarm"
+                    },
+                    {
+                      "id": "1",
+                      "value": "alarm-off",
+                      "title": "alarm-off"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "button title"
+                },
+                {
+                  "id": "titleRadioGroup",
+                  "type": "list",
+                  "displayType": "radioGroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "title",
+                      "title": "short"
+                    },
+                    {
+                      "id": "1",
+                      "value": "very long title for button",
+                      "title": "long"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "kind: text"
+        },
+        {
+          "id": "textStyledButton",
+          "type": "button",
+          "kind": "text",
+          "styles": ["button_styled", "margin_vertical_8"]
+        },
+        {
+          "id": "textDefaultButton",
+          "type": "button",
+          "kind": "text",
+          "styles": ["margin_vertical_8"]
+        },
+        {
+          "type": "label",
+          "value": "kind: outlined"
+        },
+        {
+          "id": "outlinedStyledButton",
+          "type": "button",
+          "kind": "outlined",
+          "styles": ["button_styled", "margin_vertical_8"]
+        },
+        {
+          "id": "outlinedDefaultButton",
+          "type": "button",
+          "kind": "outlined",
+          "styles": ["margin_vertical_8"]
+        },
+        {
+          "type": "label",
+          "value": "kind: contained"
+        },
+        {
+          "id": "containedStyledButton",
+          "type": "button",
+          "kind": "contained",
+          "styles": ["button_styled", "margin_vertical_8"]
+        },
+        {
+          "id": "containedDefaultButton",
+          "type": "button",
+          "kind": "contained",
+          "styles": ["margin_vertical_8"]
+        },
+        {
+          "type": "label",
+          "value": "kind: custom"
+        },
+        {
+          "id": "customStyledButton",
+          "type": "button",
+          "kind": "custom",
+          "activeStyles": ["button_active_style"],
+          "disabledStyles": ["button_disabled_style"],
+          "styles": ["button_styled", "margin_vertical_8"]
+        },
+        {
+          "id": "customDefaultButton",
+          "type": "button",
+          "kind": "custom",
+          "activeStyles": ["button_active_style"],
+          "disabledStyles": ["button_disabled_style"],
+          "styles": [
+            "margin_vertical_8",
+            {
+              "self": [
+                { "backgroundColor": "#FF5722", "borderRadius": 20, "borderWidth": 1, "borderColor": "#212121" }
+              ],
+              "label": [{ "color": "#f7f7f7", "fontSize": 14 }]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
