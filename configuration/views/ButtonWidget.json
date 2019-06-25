@@ -27,13 +27,13 @@
         {
           "id": "openDocLabel",
           "type": "label",
-          "value": "Документация.",
+          "value": "{docLink}",
           "styles": ["label_link"]
         },
         {
           "type": "label",
           "align": "center",
-          "value": "При клике на кнопку отобразятся ее атрибуты вызовом метода getAttrs()"
+          "value": "{buttonDescription}"
         },
         {
           "type": "view",

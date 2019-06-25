@@ -1,67 +1,73 @@
 /* eslint-disable class-methods-use-this */
+const ACCORDION_IDS = [{ id: 'simpleAccordion', contentId: 'simpleAccordionContent' }]
+
 class AccordionWidget {
-  onCreate({ view, navigator, notifier }, data) {
-    this.mainAccordion = view.getComponent('mainAccordion')
-    const appbar = view.getComponent('appbar')
-    appbar.onLeftIconClick(() => navigator.pop())
-    this.accordionContent = view.getComponent('accordionContent')
-    this.showAccordionAttrs()
+  onCreate({ view, navigator, notifier }) {
+    this.view = view
+    this.notifier = notifier
+    this.navigator = navigator
 
-    /** Эвенты кнопок * */
-    const buttons = {
-      title1: {
-        title: 'titleAccordion'
-      },
-      title2: {
-        title: 'titleAccordionWork'
-      },
-      visibilityTrue: {
-        visibility: true
-      },
-      visibilityFalse: {
-        visibility: false
-      }
-    }
+    this.bindAppbar()
+    this.bindDocLabel()
+    this.bindAccordions()
+    this.bindVisibility()
+    this.bindExpandButton()
+    this.bindCollapseButton()
+    this.bindToggleButton()
+    this.bindTitleRadioGroup()
+  }
 
-    function eventsConstructor(componentId, buttonsConf) {
-      for (const id in buttonsConf) {
-        const dataComponent = view.getComponent(id)
-        dataComponent.onClick(() => {
-          console.log(`onClick button - ${id}`)
-          if (typeof buttonsConf[id] === 'function') {
-            view.getComponent(componentId).setAttrs(buttonsConf[id]())
-          } else view.getComponent(componentId).setAttrs(buttonsConf[id])
-        })
-      }
-    }
+  bindAppbar() {
+    const appbar = this.view.getComponent('appbar')
+    appbar.onLeftIconClick(() => this.navigator.pop())
+  }
 
-    eventsConstructor('mainAccordion', buttons)
-    /** Эвенты кнопок * */
+  bindDocLabel() {
+    const openDocLabel = this.view.getComponent('openDocLabel')
+    openDocLabel.onClick(() => this.notifier.snackbar({ msg: 'Open link WIP' }))
+  }
 
-    // getAttrs
-    view.getComponent('getAttrsBtn').onClick(() => this.showAccordionAttrs())
-
-    // expand
-    view.getComponent('expand').onClick(() => {
-      console.log('onClick button - expand')
-      this.mainAccordion.expand()
-    })
-
-    // collapse
-    view.getComponent('collapse').onClick(() => {
-      console.log('onClick button - collapse')
-      this.mainAccordion.collapse()
-    })
-
-    // toggle
-    view.getComponent('toggle').onClick(() => {
-      console.log('onClick button - toggle')
-      this.mainAccordion.toggle()
+  bindAccordions() {
+    this.accordions = ACCORDION_IDS.map(({ id, contentId }) => {
+      const accordion = this.view.getComponent(id)
+      const contentLabel = this.view.getComponent(contentId)
+      contentLabel.setText(JSON.stringify(accordion.getAttrs(), null, 2))
+      return accordion
     })
   }
 
-  showAccordionAttrs() {
-    // this.accordionContent.setText(`|${JSON.stringify(this.mainAccordion.getAttrs(), null, 4)}|`)
-    // this.mainAccordion.expand()
+  bindVisibility() {
+    const visibilityCheckbox = this.view.getComponent('visibilityCheckbox')
+    visibilityCheckbox.onChange(value => {
+      this.accordions.forEach(accordion => accordion.setAttrs({ visibility: value }))
+    })
+  }
+
+  bindExpandButton() {
+    const expandButton = this.view.getComponent('expandButton')
+    expandButton.onClick(() => {
+      this.accordions.forEach(accordion => accordion.expand())
+    })
+  }
+
+  bindCollapseButton() {
+    const collapseButton = this.view.getComponent('collapseButton')
+    collapseButton.onClick(() => {
+      this.accordions.forEach(accordion => accordion.collapse())
+    })
+  }
+
+  bindToggleButton() {
+    const toggleButton = this.view.getComponent('toggleButton')
+    toggleButton.onClick(() => {
+      this.accordions.forEach(accordion => accordion.toggle())
+    })
+  }
+
+  bindTitleRadioGroup() {
+    const titleRadioGroup = this.view.getComponent('titleRadioGroup')
+    titleRadioGroup.onClick(item => {
+      this.accordions.forEach(accordion => accordion.setAttrs({ title: item.value }))
+    })
   }
 }

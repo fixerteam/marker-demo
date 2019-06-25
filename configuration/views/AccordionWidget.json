@@ -23,9 +23,116 @@
       "orientation": "vertical",
       "scrollable": true,
       "align": "center_top",
-      "styles": ["match_parent", "padding_all_16"],
+      "styles": ["match_parent"],
       "elements": [
         {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": ["label_link"]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{accordionDescription}"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            {
+              "self": [
+                {
+                  "justifyContent": "space-between",
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "id": "visibilityCheckbox",
+                  "title": "visibility",
+                  "value": true
+                },
+                { "type": "button", "title": "expand", "id": "expandButton", "styles": ["margin_vertical_8"] },
+                { "type": "button", "title": "collapse", "id": "collapseButton", "styles": ["margin_vertical_8"] },
+                { "type": "button", "title": "toggle", "id": "toggleButton", "styles": ["margin_vertical_8"] }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "button icon"
+                },
+                {
+                  "id": "iconRadioGroup",
+                  "type": "list",
+                  "displayType": "radioGroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "alarm",
+                      "title": "alarm"
+                    },
+                    {
+                      "id": "1",
+                      "value": "alarm-off",
+                      "title": "alarm-off"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "accordion title"
+                },
+                {
+                  "id": "titleRadioGroup",
+                  "type": "list",
+                  "displayType": "radioGroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "title",
+                      "title": "short"
+                    },
+                    {
+                      "id": "1",
+                      "value": "very very very long title for accordion",
+                      "title": "long"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "simpleAccordion",
           "type": "accordion",
           "title": "titleAccordion",
           "styles": [
@@ -38,7 +145,8 @@
               "header": [
                 {
                   "borderWidth": 1,
-                  "borderColor": "#212121"
+                  "borderColor": "#212121",
+                  "padding": 8
                 }
               ],
               "content": [
@@ -56,7 +164,7 @@
               "elements": [
                 {
                   "type": "label",
-                  "id": "accordionContent",
+                  "id": "simpleAccordionContent",
                   "styles": [
                     "match_parent",
                     {
@@ -70,111 +178,7 @@
                 }
               ]
             }
-          ],
-          "id": "mainAccordion"
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "elements": [
-            {
-              "type": "button",
-              "title": "title1",
-              "id": "title1",
-              "styles": ["margin_all_16"]
-            },
-            {
-              "type": "button",
-              "title": "title2",
-              "id": "title2",
-              "styles": ["margin_all_16"]
-            }
           ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "elements": [
-            {
-              "type": "button",
-              "title": "show",
-              "id": "visibilityTrue",
-              "styles": ["margin_all_16"]
-            },
-            {
-              "type": "button",
-              "title": "hide",
-              "id": "visibilityFalse",
-              "styles": ["margin_all_16"]
-            }
-          ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "elements": [
-            {
-              "type": "button",
-              "title": "expand",
-              "id": "expand",
-              "styles": ["margin_all_16"]
-            },
-            {
-              "type": "button",
-              "title": "collapse",
-              "id": "collapse",
-              "styles": ["margin_all_16"]
-            }
-          ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "elements": [
-            {
-              "type": "button",
-              "title": "toggle",
-              "id": "toggle",
-              "styles": ["margin_all_16"]
-            },
-            {
-              "type": "button",
-              "title": "getAttrs",
-              "id": "getAttrsBtn",
-              "styles": ["margin_all_16"]
-            }
-          ]
-        },
-        {
-          "type": "accordion",
-          "title": "themeStyle",
-          "elements": [
-            {
-              "type": "label",
-              "value": "themeStyleContent"
-            }
-          ]
-        },
-        {
-          "type": "accordion",
-          "title": "nameStyle",
-          "elements": [
-            {
-              "type": "label",
-              "value": "nameStyleContent"
-            }
-          ]
-        },
-        {
-          "type": "accordion",
-          "title": "inlineStyle",
-          "elements": [
-            {
-              "type": "label",
-              "value": "inlineStyleContent"
-            }
-          ],
-          "id": "accordStyles"
         }
       ]
     }

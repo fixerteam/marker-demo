@@ -8,6 +8,9 @@
     "blocks": "blocks",
     "bugs": "bugs",
     "settings": "settings",
-    "attributes": "Attributes"
+    "attributes": "Attributes",
+    "docLink": "Documentation.",
+    "buttonDescription": "To see Button attributes click on it",
+    "accordionDescription": "To see Accordion attributes expand it"
   }
 }
