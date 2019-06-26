@@ -64,6 +64,11 @@
                   "title": "visibility",
                   "value": true
                 },
+                {
+                  "type": "checkbox",
+                  "id": "isReadOnlyCheckbox",
+                  "title": "readonly"
+                },
                 { "type": "button", "title": "expand", "id": "expandButton", "styles": ["margin_vertical_8"] },
                 { "type": "button", "title": "collapse", "id": "collapseButton", "styles": ["margin_vertical_8"] },
                 { "type": "button", "title": "toggle", "id": "toggleButton", "styles": ["margin_vertical_8"] }
@@ -144,11 +149,11 @@
               ],
               "header": [
                 {
-                  "borderWidth": 1,
-                  "borderColor": "#212121",
-                  "padding": 8
+                  "padding": 8,
+                  "backgroundColor": "#fafafa"
                 }
               ],
+              "title": [{ "color": "#212121" }],
               "content": [
                 {
                   "backgroundColor": "#E9E9E9"
@@ -156,6 +161,36 @@
               ]
             }
           ],
+          "activeStyles": [
+            {
+              "header": [
+                {
+                  "backgroundColor": "#607D8B"
+                }
+              ],
+              "title": [{ "color": "#fff" }]
+            }
+          ],
+          "disabledStyles": [
+            {
+              "header": [{ "backgroundColor": "#BDBDBD" }],
+              "title": [{ "color": "#fff" }],
+              "leftIcon": [{ "color": "#fff" }],
+              "rightIcon": [{ "color": "#fff" }]
+            }
+          ],
+          "leftIcon": {
+            "kind": "image",
+            "icon": "https://pp.userapi.com/c840127/v840127031/7770a/2sV_CIthl8A.jpg",
+            "size": 30,
+            "fit": "fill"
+          },
+          "rightIcon": {
+            "kind": "icon",
+            "color": "#892367",
+            "icon": "chevron-down",
+            "size": 30
+          },
           "elements": [
             {
               "type": "view",

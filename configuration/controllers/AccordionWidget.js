@@ -1,6 +1,4 @@
 /* eslint-disable class-methods-use-this */
-const ACCORDION_IDS = [{ id: 'simpleAccordion', contentId: 'simpleAccordionContent' }]
-
 class AccordionWidget {
   onCreate({ view, navigator, notifier }) {
     this.view = view
@@ -9,8 +7,9 @@ class AccordionWidget {
 
     this.bindAppbar()
     this.bindDocLabel()
-    this.bindAccordions()
-    this.bindVisibility()
+    this.bindAccordion()
+    this.bindVisibilityCheckbox()
+    this.bindReadOnlyCheckbox()
     this.bindExpandButton()
     this.bindCollapseButton()
     this.bindToggleButton()
@@ -27,47 +26,70 @@ class AccordionWidget {
     openDocLabel.onClick(() => this.notifier.snackbar({ msg: 'Open link WIP' }))
   }
 
-  bindAccordions() {
-    this.accordions = ACCORDION_IDS.map(({ id, contentId }) => {
-      const accordion = this.view.getComponent(id)
-      const contentLabel = this.view.getComponent(contentId)
-      contentLabel.setText(JSON.stringify(accordion.getAttrs(), null, 2))
-      return accordion
+  bindAccordion() {
+    this.accordion = this.view.getComponent('simpleAccordion')
+    const contentLabel = this.view.getComponent('simpleAccordionContent')
+    this.accordion.onChange(expanded => {
+      if (expanded) {
+        contentLabel.setText(JSON.stringify(this.accordion.getAttrs(), null, 2))
+      }
+      this.accordion.setAttrs({
+        rightIcon: {
+          kind: 'icon',
+          color: expanded ? '#fafafa' : '#607D8B',
+          icon: expanded ? 'chevron-up' : 'chevron-down',
+          size: 30
+        },
+        leftIcon: {
+          kind: 'image',
+          icon: expanded
+            ? 'https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg'
+            : 'https://pp.userapi.com/c840127/v840127031/7770a/2sV_CIthl8A.jpg',
+          size: 30
+        }
+      })
     })
   }
 
-  bindVisibility() {
+  bindVisibilityCheckbox() {
     const visibilityCheckbox = this.view.getComponent('visibilityCheckbox')
     visibilityCheckbox.onChange(value => {
-      this.accordions.forEach(accordion => accordion.setAttrs({ visibility: value }))
+      this.accordion.setAttrs({ visibility: value })
+    })
+  }
+
+  bindReadOnlyCheckbox() {
+    const isReadOnlyCheckbox = this.view.getComponent('isReadOnlyCheckbox')
+    isReadOnlyCheckbox.onChange(value => {
+      this.accordion.setAttrs({ readonly: value })
     })
   }
 
   bindExpandButton() {
     const expandButton = this.view.getComponent('expandButton')
     expandButton.onClick(() => {
-      this.accordions.forEach(accordion => accordion.expand())
+      this.accordion.expand()
     })
   }
 
   bindCollapseButton() {
     const collapseButton = this.view.getComponent('collapseButton')
     collapseButton.onClick(() => {
-      this.accordions.forEach(accordion => accordion.collapse())
+      this.accordion.collapse()
     })
   }
 
   bindToggleButton() {
     const toggleButton = this.view.getComponent('toggleButton')
     toggleButton.onClick(() => {
-      this.accordions.forEach(accordion => accordion.toggle())
+      this.accordion.toggle()
     })
   }
 
   bindTitleRadioGroup() {
     const titleRadioGroup = this.view.getComponent('titleRadioGroup')
     titleRadioGroup.onClick(item => {
-      this.accordions.forEach(accordion => accordion.setAttrs({ title: item.value }))
+      this.accordion.setAttrs({ title: item.value })
     })
   }
 }
