@@ -1,0 +1,271 @@
+{
+  "name": "AppbarWidget",
+  "type": "view",
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "id": "appbar",
+      "type": "appbar",
+      "title": "Appbar",
+      "leftIcon": "arrow-left",
+      "styles": [
+        {
+          "title": [
+            {
+              "textAlign": "center"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{appbarDescription}"
+        },
+        {
+          "type": "view",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "width_full",
+                {
+                  "self": [
+                    {
+                      "justifyContent": "space-between"
+                    }
+                  ]
+                }
+              ],
+              "elements": [
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "id": "isSearchingCheckbox",
+                      "title": "isSearching"
+                    },
+                    {
+                      "type": "checkbox",
+                      "id": "isTitleCenteredCheckbox",
+                      "title": "center title"
+                    },
+                    {
+                      "type": "checkbox",
+                      "id": "visibilityCheckbox",
+                      "title": "visibility",
+                      "value": true
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "title": "hideSearch",
+                      "id": "hideSearchButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
+                    },
+                    {
+                      "type": "button",
+                      "title": "showSearch",
+                      "id": "showSearchButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
+                    },
+                    {
+                      "type": "button",
+                      "title": "getAttrs",
+                      "id": "getAttrsButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "button",
+                      "title": "hideSearch",
+                      "id": "hideSearchButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
+                    },
+                    {
+                      "type": "button",
+                      "title": "showSearch",
+                      "id": "showSearchButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
+                    },
+                    {
+                      "type": "button",
+                      "title": "getAttrs",
+                      "id": "getAttrsButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "width_full",
+                {
+                  "self": [
+                    {
+                      "justifyContent": "space-between"
+                    }
+                  ]
+                }
+              ],
+              "elements": [
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "left icon"
+                    },
+                    {
+                      "id": "leftIconRadioGroup",
+                      "type": "list",
+                      "displayType": "radioGroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "menu",
+                          "title": "menu"
+                        },
+                        {
+                          "id": "1",
+                          "value": "arrow-left",
+                          "title": "arrow-left"
+                        },
+                        {
+                          "id": "2",
+                          "title": "none"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "menu icon"
+                    },
+                    {
+                      "id": "menuIconRadioGroup",
+                      "type": "list",
+                      "displayType": "radioGroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "dots-vertical",
+                          "title": "dots-vertical"
+                        },
+                        {
+                          "id": "1",
+                          "value": "dots-horizontal",
+                          "title": "dots-horizontal"
+                        },
+                        {
+                          "id": "2",
+                          "title": "none"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "title"
+                    },
+                    {
+                      "id": "titleRadioGroup",
+                      "type": "list",
+                      "displayType": "radioGroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "title",
+                          "title": "short"
+                        },
+                        {
+                          "id": "1",
+                          "value": "very long title for appbar",
+                          "title": "long"
+                        },
+                        {
+                          "id": "2",
+                          "title": "none"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "simpleAppbar",
+          "type": "appbar"
+        }
+      ]
+    }
+  ]
+}
