@@ -13,6 +13,7 @@ class AccordionWidget {
     this.bindCollapseButton()
     this.bindToggleButton()
     this.bindTitleRadioGroup()
+    this.bindIconRadioGroup()
   }
 
   bindAppbar() {
@@ -37,13 +38,6 @@ class AccordionWidget {
           kind: 'icon',
           color: expanded ? '#fafafa' : '#607D8B',
           icon: expanded ? 'chevron-up' : 'chevron-down',
-          size: 30
-        },
-        leftIcon: {
-          kind: 'image',
-          icon: expanded
-            ? 'https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg'
-            : 'https://pp.userapi.com/c840127/v840127031/7770a/2sV_CIthl8A.jpg',
           size: 30
         }
       })
@@ -89,6 +83,13 @@ class AccordionWidget {
     const titleRadioGroup = this.view.getComponent('titleRadioGroup')
     titleRadioGroup.onClick(item => {
       this.accordion.setAttrs({ title: item.value })
+    })
+  }
+
+  bindIconRadioGroup() {
+    const iconRadioGroup = this.view.getComponent('iconRadioGroup')
+    iconRadioGroup.onClick(item => {
+      this.accordion.setAttrs({ leftIcon: item.value })
     })
   }
 }

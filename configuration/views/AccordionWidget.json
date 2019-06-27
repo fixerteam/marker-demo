@@ -79,7 +79,7 @@
               "elements": [
                 {
                   "type": "label",
-                  "value": "button icon"
+                  "value": "left icon"
                 },
                 {
                   "id": "iconRadioGroup",
@@ -88,13 +88,22 @@
                   "data": [
                     {
                       "id": "0",
-                      "value": "alarm",
-                      "title": "alarm"
+                      "value": {
+                        "kind": "image",
+                        "icon": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg",
+                        "size": 30
+                      },
+                      "title": "image"
                     },
                     {
                       "id": "1",
-                      "value": "alarm-off",
-                      "title": "alarm-off"
+                      "value": {
+                        "kind": "icon",
+                        "color": "#607D8B",
+                        "icon": "home",
+                        "size": 30
+                      },
+                      "title": "icon"
                     },
                     {
                       "id": "2",
@@ -109,7 +118,7 @@
               "elements": [
                 {
                   "type": "label",
-                  "value": "accordion title"
+                  "value": "title"
                 },
                 {
                   "id": "titleRadioGroup",
@@ -123,7 +132,7 @@
                     },
                     {
                       "id": "1",
-                      "value": "very very very long title for accordion",
+                      "value": "very very very very very very long title for accordion",
                       "title": "long"
                     },
                     {
@@ -142,11 +151,7 @@
           "title": "titleAccordion",
           "styles": [
             {
-              "self": [
-                {
-                  "width": "100%"
-                }
-              ],
+              "self": [{ "width": "100%" }],
               "header": [
                 {
                   "padding": 8,
@@ -154,21 +159,14 @@
                 }
               ],
               "title": [{ "color": "#212121" }],
-              "content": [
-                {
-                  "backgroundColor": "#E9E9E9"
-                }
-              ]
+              "content": [{ "backgroundColor": "#E9E9E9" }]
             }
           ],
           "activeStyles": [
             {
-              "header": [
-                {
-                  "backgroundColor": "#607D8B"
-                }
-              ],
-              "title": [{ "color": "#fff" }]
+              "header": [{ "backgroundColor": "#607D8B" }],
+              "title": [{ "color": "#fff" }],
+              "leftIcon": [{ "color": "#fff" }]
             }
           ],
           "disabledStyles": [
