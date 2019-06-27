@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 class WidgetsScreen {
   onCreate({ view, model, notifier, navigator }) {
     this.view = view

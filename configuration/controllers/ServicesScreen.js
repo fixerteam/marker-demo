@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 class ServicesScreen {
   onCreate({ view, model, notifier }) {
     this.view = view

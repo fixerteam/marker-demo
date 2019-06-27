@@ -1,4 +1,3 @@
-/* eslint-disable class-methods-use-this */
 class AccordionWidget {
   onCreate({ view, navigator, notifier }) {
     this.view = view
