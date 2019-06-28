@@ -9,6 +9,7 @@ class AppbarWidget {
     this.bindDocLabel()
     this.bindTestAppbar()
     this.bindVisibilityCheckbox()
+    this.bindHasTabsCheckbox()
     this.bindIsSearchingCheckbox()
     this.bindCenterTitleCheckbox()
     this.bindHideSearchButton()
@@ -23,7 +24,6 @@ class AppbarWidget {
 
   onResume(params) {
     if (params && params.menuItem) {
-      console.log('TCL: onResume -> params.menuItem', params.menuItem)
       const menuItems = this.appbar.getAttrs().elements
       const newMenuItem = params.menuItem
       newMenuItem.id = `item${menuItems.length}`
@@ -55,6 +55,13 @@ class AppbarWidget {
     const visibilityCheckbox = this.view.getComponent('visibilityCheckbox')
     visibilityCheckbox.onChange(value => {
       this.appbar.setAttrs({ visibility: value })
+    })
+  }
+
+  bindHasTabsCheckbox() {
+    const hasTabsCheckbox = this.view.getComponent('hasTabsCheckbox')
+    hasTabsCheckbox.onChange(value => {
+      this.appbar.setAttrs({ hasTabs: value })
     })
   }
 

@@ -79,6 +79,11 @@
                       "id": "visibilityCheckbox",
                       "title": "visibility",
                       "value": true
+                    },
+                    {
+                      "type": "checkbox",
+                      "id": "hasTabsCheckbox",
+                      "title": "hasTabs"
                     }
                   ]
                 },
