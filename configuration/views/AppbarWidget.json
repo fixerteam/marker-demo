@@ -1,6 +1,7 @@
 {
   "name": "AppbarWidget",
   "type": "view",
+  "public": true,
   "styles": [
     "match_parent"
   ],
@@ -11,13 +12,7 @@
       "title": "Appbar",
       "leftIcon": "arrow-left",
       "styles": [
-        {
-          "title": [
-            {
-              "textAlign": "center"
-            }
-          ]
-        }
+        "appbar_title_center"
       ]
     },
     {
@@ -63,13 +58,7 @@
               "orientation": "horizontal",
               "styles": [
                 "width_full",
-                {
-                  "self": [
-                    {
-                      "justifyContent": "space-between"
-                    }
-                  ]
-                }
+                "space_between"
               ],
               "elements": [
                 {
@@ -111,43 +100,6 @@
                       "styles": [
                         "margin_vertical_8"
                       ]
-                    },
-                    {
-                      "type": "button",
-                      "title": "getAttrs",
-                      "id": "getAttrsButton",
-                      "styles": [
-                        "margin_vertical_8"
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "type": "view",
-                  "elements": [
-                    {
-                      "type": "button",
-                      "title": "hideSearch",
-                      "id": "hideSearchButton",
-                      "styles": [
-                        "margin_vertical_8"
-                      ]
-                    },
-                    {
-                      "type": "button",
-                      "title": "showSearch",
-                      "id": "showSearchButton",
-                      "styles": [
-                        "margin_vertical_8"
-                      ]
-                    },
-                    {
-                      "type": "button",
-                      "title": "getAttrs",
-                      "id": "getAttrsButton",
-                      "styles": [
-                        "margin_vertical_8"
-                      ]
                     }
                   ]
                 }
@@ -158,13 +110,41 @@
               "orientation": "horizontal",
               "styles": [
                 "width_full",
+                "space_between"
+              ],
+              "elements": [
                 {
-                  "self": [
-                    {
-                      "justifyContent": "space-between"
-                    }
+                  "type": "button",
+                  "title": "addItem",
+                  "id": "addItemButton",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "type": "button",
+                  "title": "removeItems",
+                  "id": "removeItemsButton",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "type": "button",
+                  "title": "getAttrs",
+                  "id": "getAttrsButton",
+                  "styles": [
+                    "margin_vertical_8"
                   ]
                 }
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "width_full",
+                "space_between"
               ],
               "elements": [
                 {

@@ -17,6 +17,19 @@ class AppbarWidget {
     this.bindLeftIconRadioGroup()
     this.bindTitleRadioGroup()
     this.bindMenuIconRadioGroup()
+    this.bindAddMenuItemButton()
+    this.bindRemoveAllMenuItems()
+  }
+
+  onResume(params) {
+    if (params && params.menuItem) {
+      console.log('TCL: onResume -> params.menuItem', params.menuItem)
+      const menuItems = this.appbar.getAttrs().elements
+      const newMenuItem = params.menuItem
+      newMenuItem.id = `item${menuItems.length}`
+      menuItems.push(newMenuItem)
+      this.appbar.setAttrs({ elements: menuItems })
+    }
   }
 
   bindAppbar() {
@@ -36,37 +49,6 @@ class AppbarWidget {
     this.appbar.onChange({ func: text => this.notifier.snackbar({ msg: text }) })
     this.appbar.onSubmit(text => this.notifier.snackbar({ msg: `Submitted: ${text}` }))
     this.appbar.onClear(() => this.notifier.snackbar({ msg: 'Search was cleared' }))
-    this.appbar.setAttrs({
-      menuIcon: 'dots-vertical',
-      elements: [
-        {
-          title: '123',
-          id: 'home',
-          displayType: 'icon',
-          icon: 'home',
-          color: '#ababfd'
-        },
-        {
-          title: 'home',
-          id: 'home1',
-          displayType: 'label',
-          icon: 'adjust'
-        },
-        {
-          title: 'home2',
-          id: 'home2',
-          displayType: 'icon_label',
-          icon: 'adjust'
-        },
-        {
-          title: 'Домой',
-          id: 'home3',
-          displayType: 'collapsed',
-          icon: 'home',
-          color: '#333'
-        }
-      ]
-    })
   }
 
   bindVisibilityCheckbox() {
@@ -117,11 +99,22 @@ class AppbarWidget {
     })
   }
 
+  bindAddMenuItemButton() {
+    const addItemButton = this.view.getComponent('addItemButton')
+    addItemButton.onClick(() => this.navigator.push({ id: 'AddMenuItemPopup', isPopup: true }))
+  }
+
+  bindRemoveAllMenuItems() {
+    const removeItemsButton = this.view.getComponent('removeItemsButton')
+    removeItemsButton.onClick(() => this.appbar.setAttrs({ elements: [] }))
+  }
+
   bindLeftIconRadioGroup() {
     const leftIconRadioGroup = this.view.getComponent('leftIconRadioGroup')
     leftIconRadioGroup.onClick(item => {
       this.appbar.setAttrs({ leftIcon: item.value })
     })
+    leftIconRadioGroup.setValue('2')
   }
 
   bindTitleRadioGroup() {
@@ -129,6 +122,7 @@ class AppbarWidget {
     titleRadioGroup.onClick(item => {
       this.appbar.setAttrs({ title: item.value })
     })
+    titleRadioGroup.setValue('2')
   }
 
   bindMenuIconRadioGroup() {
@@ -136,5 +130,6 @@ class AppbarWidget {
     menuIconRadioGroup.onClick(item => {
       this.appbar.setAttrs({ menuIcon: item.value })
     })
+    menuIconRadioGroup.setValue('2')
   }
 }

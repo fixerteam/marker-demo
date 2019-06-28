@@ -1,15 +1,10 @@
 {
-  "name": "button_active_style",
+  "name": "appbar_title_center",
   "type": "style",
   "value": {
-    "self": [
+    "title": [
       {
-        "backgroundColor": "#45ffaa"
-      }
-    ],
-    "label": [
-      {
-        "color": "#333"
+        "textAlign": "center"
       }
     ]
   },

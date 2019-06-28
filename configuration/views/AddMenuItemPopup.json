@@ -1,0 +1,180 @@
+{
+  "name": "AddMenuItemPopup",
+  "type": "view",
+  "align": "center_top",
+  "styles": [
+    {
+      "self": [
+        {
+          "width": "80%",
+          "height": "50%",
+          "backgroundColor": "#fafafa"
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "type": "label",
+      "value": "{addMenuItem}",
+      "styles": [
+        "margin_all_16",
+        {
+          "self": [
+            {
+              "fontSize": 18,
+              "fontWeight": "bold",
+              "color": "#000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "orientation": "horizontal",
+      "styles": [
+        "match_parent",
+        "padding_all_16",
+        {
+          "self": [
+            {
+              "justifyContent": "space-around"
+            }
+          ]
+        }
+      ],
+      "elements": [
+        {
+          "type": "view",
+          "elements": [
+            {
+              "type": "label",
+              "value": "displayType"
+            },
+            {
+              "id": "displayTypeRadioGroup",
+              "type": "list",
+              "displayType": "radioGroup",
+              "data": [
+                {
+                  "id": "0",
+                  "value": "icon",
+                  "title": "icon"
+                },
+                {
+                  "id": "1",
+                  "value": "label",
+                  "title": "label"
+                },
+                {
+                  "id": "2",
+                  "title": "icon_label",
+                  "value": "icon_label"
+                },
+                {
+                  "id": "3",
+                  "title": "collapsed",
+                  "value": "collapsed"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "view",
+          "elements": [
+            {
+              "type": "label",
+              "value": "color"
+            },
+            {
+              "id": "colorRadioGroup",
+              "type": "list",
+              "displayType": "radioGroup",
+              "data": [
+                {
+                  "id": "0",
+                  "value": "#fff",
+                  "title": "white"
+                },
+                {
+                  "id": "1",
+                  "value": "#000",
+                  "title": "black"
+                },
+                {
+                  "id": "2",
+                  "title": "none"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "view",
+          "elements": [
+            {
+              "type": "label",
+              "value": "icon"
+            },
+            {
+              "id": "iconRadioGroup",
+              "type": "list",
+              "displayType": "radioGroup",
+              "data": [
+                {
+                  "id": "0",
+                  "value": "home",
+                  "title": "home"
+                },
+                {
+                  "id": "1",
+                  "value": "account",
+                  "title": "account"
+                },
+                {
+                  "id": "2",
+                  "value": "airplane",
+                  "title": "airplane"
+                },
+                {
+                  "id": "3",
+                  "value": "barcode",
+                  "title": "barcode"
+                },
+                {
+                  "id": "4",
+                  "title": "none"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "view",
+      "orientation": "horizontal",
+      "styles": [
+        "width_full",
+        "margin_vertical_8"
+      ],
+      "align": "right_center",
+      "elements": [
+        {
+          "type": "button",
+          "kind": "text",
+          "title": "Cancel",
+          "id": "cancelButton"
+        },
+        {
+          "type": "button",
+          "kind": "text",
+          "title": "OK",
+          "id": "okButton"
+        }
+      ]
+    }
+  ]
+}

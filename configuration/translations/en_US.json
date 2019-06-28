@@ -11,6 +11,7 @@
     "attributes": "Attributes",
     "docLink": "Documentation.",
     "buttonDescription": "To see Button attributes click on it",
-    "accordionDescription": "To see Accordion attributes expand it"
+    "accordionDescription": "To see Accordion attributes expand it",
+    "addMenuItem": "Add menu item"
   }
 }

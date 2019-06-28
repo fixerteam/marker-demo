@@ -1,15 +1,10 @@
 {
-  "name": "button_active_style",
+  "name": "space_between",
   "type": "style",
   "value": {
     "self": [
       {
-        "backgroundColor": "#45ffaa"
-      }
-    ],
-    "label": [
-      {
-        "color": "#333"
+        "justifyContent": "space-between"
       }
     ]
   },
