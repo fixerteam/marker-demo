@@ -173,6 +173,20 @@
           "type": "list",
           "displayType": "autocomplete",
           "kind": "flat",
+          "title": "flat",
+          "mode": "flat",
+          "isSuggestionOpened": true,
+          "styles": [
+            {
+              "listItem": {
+                "self": [
+                  {
+                    "padding": 16
+                  }
+                ]
+              }
+            }
+          ],
           "data": [
             {
               "id": "apple",
@@ -203,7 +217,7 @@
               "self": [
                 {
                   "width": "100%",
-                  "height": 800
+                  "height": 300
                 }
               ]
             }
@@ -213,7 +227,19 @@
           "id": "simpleAutocomplete1",
           "type": "list",
           "displayType": "autocomplete",
-          "kind": "flat",
+          "title": "outlined",
+          "kind": "outlined",
+          "styles": [
+            {
+              "listItem": {
+                "self": [
+                  {
+                    "padding": 16
+                  }
+                ]
+              }
+            }
+          ],
           "data": [
             {
               "id": "apple",
@@ -249,7 +275,7 @@
               ]
             }
           ]
-        },
+        }
       ]
     }
   ]

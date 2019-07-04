@@ -2,11 +2,21 @@
   "name": "PluginListItem",
   "type": "view",
   "orientation": "horizontal",
-  "styles": ["padding_all_16"],
+  "styles": [
+    "padding_all_16"
+  ],
   "elements": [
     {
       "type": "label",
-      "styles": [{ "self": [{ "flex": 1 }] }],
+      "styles": [
+        {
+          "self": [
+            {
+              "flex": 1
+            }
+          ]
+        }
+      ],
       "id": "title"
     },
     {
