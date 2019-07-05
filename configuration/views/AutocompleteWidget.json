@@ -35,12 +35,11 @@
         {
           "type": "label",
           "align": "center",
-          "value": "{accordionDescription}"
+          "value": "{autocompleteDescription}"
         },
         {
           "type": "view",
           "orientation": "horizontal",
-          "visibility": false,
           "styles": [
             "width_full",
             "padding_all_16",
@@ -72,28 +71,19 @@
                   "title": "readonly"
                 },
                 {
-                  "type": "button",
-                  "title": "expand",
-                  "id": "expandButton",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
+                  "type": "checkbox",
+                  "id": "isLoadingCheckbox",
+                  "title": "loading"
                 },
                 {
-                  "type": "button",
-                  "title": "collapse",
-                  "id": "collapseButton",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
+                  "type": "checkbox",
+                  "id": "isSuggestionsOpenCheckbox",
+                  "title": "isSuggestionOpened"
                 },
                 {
-                  "type": "button",
-                  "title": "toggle",
-                  "id": "toggleButton",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
+                  "type": "checkbox",
+                  "id": "isFloatingTitleCheckbox",
+                  "title": "isFloatingTitle"
                 }
               ]
             },
@@ -169,12 +159,10 @@
           ]
         },
         {
-          "id": "simpleAutocomplete",
+          "id": "fallbackAutocomplete",
           "type": "list",
           "displayType": "autocomplete",
-          "kind": "flat",
-          "title": "flat",
-          "mode": "flat",
+          "title": "fallback",
           "isSuggestionOpened": true,
           "styles": [
             {
@@ -211,20 +199,7 @@
           ]
         },
         {
-          "type": "view",
-          "styles": [
-            {
-              "self": [
-                {
-                  "width": "100%",
-                  "height": 300
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "id": "simpleAutocomplete1",
+          "id": "outlinedAutocomplete",
           "type": "list",
           "displayType": "autocomplete",
           "title": "outlined",
@@ -264,15 +239,42 @@
           ]
         },
         {
-          "type": "view",
+          "id": "flatAutocomplete",
+          "type": "list",
+          "displayType": "autocomplete",
+          "title": "flat",
+          "kind": "flat",
           "styles": [
             {
-              "self": [
-                {
-                  "width": "100%",
-                  "height": 50
-                }
-              ]
+              "listItem": {
+                "self": [
+                  {
+                    "padding": 16
+                  }
+                ]
+              }
+            }
+          ],
+          "data": [
+            {
+              "id": "apple",
+              "value": "apple"
+            },
+            {
+              "id": "banana",
+              "value": "banana"
+            },
+            {
+              "id": "cherry",
+              "value": "cherry"
+            },
+            {
+              "id": "durian",
+              "value": "durian"
+            },
+            {
+              "id": "mango",
+              "value": "mango"
             }
           ]
         }

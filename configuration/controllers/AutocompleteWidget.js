@@ -1,3 +1,5 @@
+const AUTOCOMPLETE_IDS = ['fallbackAutocomplete', 'outlinedAutocomplete', 'flatAutocomplete']
+
 class AutocompleteWidget {
   onCreate({ view, navigator, notifier }) {
     this.view = view
@@ -6,7 +8,12 @@ class AutocompleteWidget {
 
     this.bindAppbar()
     this.bindDocLabel()
-    this.bindAutocomplete()
+    this.bindAutocompletes()
+    this.bindFloatingTitleCheckbox()
+    this.bindLoadingCheckbox()
+    this.bindReadOnlyCheckbox()
+    this.bindSuggestionsOpenCheckbox()
+    this.bindVisibilityCheckbox()
   }
 
   bindAppbar() {
@@ -19,7 +26,42 @@ class AutocompleteWidget {
     openDocLabel.onClick(() => this.notifier.snackbar({ msg: 'Open link WIP' }))
   }
 
-  bindAutocomplete() {
-    this.autocomplete = this.view.getComponent('simpleAutocomplete')
+  bindAutocompletes() {
+    this.autocompletes = AUTOCOMPLETE_IDS.map(id => this.view.getComponent(id))
+  }
+
+  bindLoadingCheckbox() {
+    const isLoadingCheckbox = this.view.getComponent('isLoadingCheckbox')
+    isLoadingCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isRefreshing: value }))
+    })
+  }
+
+  bindReadOnlyCheckbox() {
+    const isReadOnlyCheckbox = this.view.getComponent('isReadOnlyCheckbox')
+    isReadOnlyCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ readonly: value }))
+    })
+  }
+
+  bindVisibilityCheckbox() {
+    const visibilityCheckbox = this.view.getComponent('visibilityCheckbox')
+    visibilityCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ visibility: value }))
+    })
+  }
+
+  bindSuggestionsOpenCheckbox() {
+    const isSuggestionsOpenCheckbox = this.view.getComponent('isSuggestionsOpenCheckbox')
+    isSuggestionsOpenCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isSuggestionOpened: value }))
+    })
+  }
+
+  bindFloatingTitleCheckbox() {
+    const isFloatingTitleCheckbox = this.view.getComponent('isFloatingTitleCheckbox')
+    isFloatingTitleCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isFloatingTitle: value }))
+    })
   }
 }

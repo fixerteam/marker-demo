@@ -3,6 +3,7 @@
   "fields": {
     "id": "integer",
     "name": "string",
+    "screen": "string",
     "compatibility": {
       "web": "boolean",
       "android": "boolean",
