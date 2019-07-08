@@ -79,11 +79,6 @@
                   "type": "checkbox",
                   "id": "isSuggestionsOpenCheckbox",
                   "title": "isSuggestionOpened"
-                },
-                {
-                  "type": "checkbox",
-                  "id": "isFloatingTitleCheckbox",
-                  "title": "isFloatingTitle"
                 }
               ]
             },
@@ -159,60 +154,18 @@
           ]
         },
         {
-          "id": "fallbackAutocomplete",
-          "type": "list",
-          "displayType": "autocomplete",
-          "title": "fallback",
-          "isSuggestionOpened": true,
-          "styles": [
-            {
-              "listItem": {
-                "self": [
-                  {
-                    "padding": 16
-                  }
-                ]
-              }
-            }
-          ],
-          "data": [
-            {
-              "id": "apple",
-              "value": "apple"
-            },
-            {
-              "id": "banana",
-              "value": "banana"
-            },
-            {
-              "id": "cherry",
-              "value": "cherry"
-            },
-            {
-              "id": "durian",
-              "value": "durian"
-            },
-            {
-              "id": "mango",
-              "value": "mango"
-            }
-          ]
-        },
-        {
           "id": "outlinedAutocomplete",
-          "type": "list",
-          "displayType": "autocomplete",
+          "type": "autocomplete",
           "title": "outlined",
           "kind": "outlined",
+          "mode": "flat",
           "styles": [
             {
-              "listItem": {
-                "self": [
-                  {
-                    "padding": 16
-                  }
-                ]
-              }
+              "listItem": [
+                {
+                  "padding": 16
+                }
+              ]
             }
           ],
           "data": [
@@ -240,19 +193,16 @@
         },
         {
           "id": "flatAutocomplete",
-          "type": "list",
-          "displayType": "autocomplete",
+          "type": "autocomplete",
           "title": "flat",
           "kind": "flat",
           "styles": [
             {
-              "listItem": {
-                "self": [
-                  {
-                    "padding": 16
-                  }
-                ]
-              }
+              "listItem": [
+                {
+                  "padding": 16
+                }
+              ]
             }
           ],
           "data": [

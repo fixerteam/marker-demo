@@ -1,4 +1,4 @@
-const AUTOCOMPLETE_IDS = ['fallbackAutocomplete', 'outlinedAutocomplete', 'flatAutocomplete']
+const AUTOCOMPLETE_IDS = ['outlinedAutocomplete', 'flatAutocomplete']
 
 class AutocompleteWidget {
   onCreate({ view, navigator, notifier }) {
@@ -9,7 +9,6 @@ class AutocompleteWidget {
     this.bindAppbar()
     this.bindDocLabel()
     this.bindAutocompletes()
-    this.bindFloatingTitleCheckbox()
     this.bindLoadingCheckbox()
     this.bindReadOnlyCheckbox()
     this.bindSuggestionsOpenCheckbox()
@@ -33,7 +32,7 @@ class AutocompleteWidget {
   bindLoadingCheckbox() {
     const isLoadingCheckbox = this.view.getComponent('isLoadingCheckbox')
     isLoadingCheckbox.onChange(value => {
-      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isRefreshing: value }))
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isLoading: value }))
     })
   }
 
@@ -54,14 +53,7 @@ class AutocompleteWidget {
   bindSuggestionsOpenCheckbox() {
     const isSuggestionsOpenCheckbox = this.view.getComponent('isSuggestionsOpenCheckbox')
     isSuggestionsOpenCheckbox.onChange(value => {
-      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isSuggestionOpened: value }))
-    })
-  }
-
-  bindFloatingTitleCheckbox() {
-    const isFloatingTitleCheckbox = this.view.getComponent('isFloatingTitleCheckbox')
-    isFloatingTitleCheckbox.onChange(value => {
-      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ isFloatingTitle: value }))
+      this.autocompletes[1].setAttrs({ isSuggestionsOpened: value })
     })
   }
 }
