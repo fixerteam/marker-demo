@@ -12,6 +12,9 @@
     "docLink": "Документация.",
     "buttonDescription": "Чтобы увидеть атрибуты кнопки, кликни по ней",
     "accordionDescription": "Чтобы увидеть атрибуты аккордеона, раскрой его",
-    "addMenuItem": "Добавить пункт меню"
+    "addMenuItem": "Добавить пункт меню",
+    "startTyping": "Введите 'a' символ",
+    "autocompletePlaceholder": "Начните набор текста",
+    "autocompleteError": "Ошибка ввода"
   }
 }

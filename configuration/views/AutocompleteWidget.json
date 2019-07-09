@@ -73,80 +73,66 @@
                 {
                   "type": "checkbox",
                   "id": "isLoadingCheckbox",
-                  "title": "loading"
-                },
-                {
-                  "type": "checkbox",
-                  "id": "isSuggestionsOpenCheckbox",
-                  "title": "isSuggestionOpened"
+                  "title": "isLoading"
                 }
               ]
             },
             {
               "type": "view",
+              "align": "center_top",
               "elements": [
                 {
-                  "type": "label",
-                  "value": "left icon"
+                  "id": "setDataButton",
+                  "type": "button",
+                  "title": "set data",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
                 },
                 {
-                  "id": "iconRadioGroup",
-                  "type": "list",
-                  "displayType": "radioGroup",
-                  "data": [
-                    {
-                      "id": "0",
-                      "value": {
-                        "kind": "image",
-                        "icon": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg",
-                        "size": 30
-                      },
-                      "title": "image"
-                    },
-                    {
-                      "id": "1",
-                      "value": {
-                        "kind": "icon",
-                        "color": "#607D8B",
-                        "icon": "home",
-                        "size": 30
-                      },
-                      "title": "icon"
-                    },
-                    {
-                      "id": "2",
-                      "title": "none"
-                    }
+                  "id": "setValueButton",
+                  "type": "button",
+                  "title": "set value",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "id": "clearValueButton",
+                  "type": "button",
+                  "title": "clear value",
+                  "styles": [
+                    "margin_vertical_8"
                   ]
                 }
               ]
             },
             {
               "type": "view",
+              "align": "center_top",
               "elements": [
                 {
-                  "type": "label",
-                  "value": "title"
+                  "id": "setTitleButton",
+                  "type": "button",
+                  "title": "set title",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
                 },
                 {
-                  "id": "titleRadioGroup",
-                  "type": "list",
-                  "displayType": "radioGroup",
-                  "data": [
-                    {
-                      "id": "0",
-                      "value": "title",
-                      "title": "short"
-                    },
-                    {
-                      "id": "1",
-                      "value": "very very very very very very long title for accordion",
-                      "title": "long"
-                    },
-                    {
-                      "id": "2",
-                      "title": "none"
-                    }
+                  "id": "setErrorButton",
+                  "type": "button",
+                  "title": "set error",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "id": "clearErrorButton",
+                  "type": "button",
+                  "title": "clear error",
+                  "styles": [
+                    "margin_vertical_8"
                   ]
                 }
               ]
@@ -154,79 +140,146 @@
           ]
         },
         {
-          "id": "outlinedAutocomplete",
-          "type": "autocomplete",
-          "title": "outlined",
-          "kind": "outlined",
-          "mode": "flat",
+          "type": "label",
+          "value": "Flat popover without floating title",
           "styles": [
             {
-              "listItem": [
+              "self": [
                 {
-                  "padding": 16
+                  "marginTop": 32
                 }
               ]
-            }
-          ],
-          "data": [
-            {
-              "id": "apple",
-              "value": "apple"
-            },
-            {
-              "id": "banana",
-              "value": "banana"
-            },
-            {
-              "id": "cherry",
-              "value": "cherry"
-            },
-            {
-              "id": "durian",
-              "value": "durian"
-            },
-            {
-              "id": "mango",
-              "value": "mango"
             }
           ]
         },
         {
-          "id": "flatAutocomplete",
-          "type": "autocomplete",
-          "title": "flat",
-          "kind": "flat",
+          "type": "button",
+          "id": "FPWFT_isSuggestionsOpenedButton",
+          "title": "isSuggestionsOpened"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "FPWFT_popupButton",
+              "type": "button",
+              "title": "popup"
+            },
+            {
+              "id": "FPWFT_getAttrsButton",
+              "type": "button",
+              "title": "get attrs"
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "nestedScreen": "FlatPopoverWithoutFloatingTitleAutocomplete"
+        },
+        {
+          "type": "label",
+          "value": "Flat fixed with floating title",
           "styles": [
             {
-              "listItem": [
+              "self": [
                 {
-                  "padding": 16
+                  "marginTop": 32
                 }
               ]
             }
-          ],
-          "data": [
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
             {
-              "id": "apple",
-              "value": "apple"
+              "id": "FFFT_popupButton",
+              "type": "button",
+              "title": "popup"
             },
             {
-              "id": "banana",
-              "value": "banana"
-            },
-            {
-              "id": "cherry",
-              "value": "cherry"
-            },
-            {
-              "id": "durian",
-              "value": "durian"
-            },
-            {
-              "id": "mango",
-              "value": "mango"
+              "id": "FFFT_getAttrsButton",
+              "type": "button",
+              "title": "get attrs"
             }
           ]
+        },
+        {
+          "type": "container",
+          "nestedScreen": "FlatFixedWithFloatingTitleAutocomplete"
+        },
+        {
+          "type": "label",
+          "value": "Outlined popover without floating title",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "button",
+          "id": "OPWFT_isSuggestionsOpenedButton",
+          "title": "isSuggestionsOpened"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "OPWFT_popupButton",
+              "type": "button",
+              "title": "popup"
+            },
+            {
+              "id": "OPWFT_getAttrsButton",
+              "type": "button",
+              "title": "get attrs"
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "nestedScreen": "OutlinedPopoverWithoutFloatingTitleAutocomplete"
+        },
+        {
+          "type": "label",
+          "value": "Outlined fixed with floating title",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "OFFT_popupButton",
+              "type": "button",
+              "title": "popup"
+            },
+            {
+              "id": "OFFT_getAttrsButton",
+              "type": "button",
+              "title": "get attrs"
+            }
+          ]
+        },
+        {
+          "type": "container",
+          "nestedScreen": "OutlinedFixedWithFloatingTitleAutocomplete"
         }
       ]
     }

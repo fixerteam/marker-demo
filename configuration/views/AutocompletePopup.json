@@ -1,0 +1,22 @@
+{
+  "name": "AutocompletePopup",
+  "type": "view",
+  "align": "center",
+  "styles": [
+    {
+      "self": [
+        {
+          "width": 300,
+          "minHeight": 200,
+          "backgroundColor": "#fafafa"
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "id": "screenContainer",
+      "type": "container"
+    }
+  ]
+}

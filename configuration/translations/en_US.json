@@ -12,6 +12,9 @@
     "docLink": "Documentation.",
     "buttonDescription": "To see Button attributes click on it",
     "accordionDescription": "To see Accordion attributes expand it",
-    "addMenuItem": "Add menu item"
+    "addMenuItem": "Add menu item",
+    "startTyping": "Enter 'a' symbol",
+    "autocompletePlaceholder": "Start typing",
+    "autocompleteError": "Typing error"
   }
 }

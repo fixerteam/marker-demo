@@ -1,0 +1,38 @@
+{
+  "name": "FlatFixedWithFloatingTitleAutocomplete",
+  "type": "autocomplete",
+  "title": "{startTyping}",
+  "kind": "flat",
+  "mode": "fixed",
+  "styles": [
+    {
+      "self": [
+        {
+          "width": "80%"
+        }
+      ]
+    }
+  ],
+  "data": [
+    {
+      "id": "0",
+      "value": "apple"
+    },
+    {
+      "id": "1",
+      "value": "banana"
+    },
+    {
+      "id": "2",
+      "value": "cherry"
+    },
+    {
+      "id": "3",
+      "value": "durian"
+    },
+    {
+      "id": "4",
+      "value": "mango"
+    }
+  ]
+}
