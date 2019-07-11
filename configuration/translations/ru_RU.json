@@ -15,6 +15,8 @@
     "addMenuItem": "Добавить пункт меню",
     "startTyping": "Введите 'a' символ",
     "autocompletePlaceholder": "Начните набор текста",
-    "autocompleteError": "Ошибка ввода"
+    "autocompleteError": "Ошибка ввода",
+    "dropdownPlaceholder": "Выберите значение",
+    "dropdownError": "Некорректное значение"
   }
 }

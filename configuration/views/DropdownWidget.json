@@ -1,5 +1,5 @@
 {
-  "name": "AutocompleteWidget",
+  "name": "DropdownWidget",
   "type": "view",
   "public": true,
   "styles": [
@@ -9,7 +9,7 @@
     {
       "id": "appbar",
       "type": "appbar",
-      "title": "Autocomplete",
+      "title": "Dropdown",
       "leftIcon": "arrow-left",
       "styles": [
         "appbar_title_center"
@@ -35,7 +35,7 @@
         {
           "type": "label",
           "align": "center",
-          "value": "{autocompleteDescription}"
+          "value": "{dropdownDescription}"
         },
         {
           "type": "view",
@@ -69,11 +69,6 @@
                   "type": "checkbox",
                   "id": "isReadOnlyCheckbox",
                   "title": "readonly"
-                },
-                {
-                  "type": "checkbox",
-                  "id": "isLoadingCheckbox",
-                  "title": "isLoading"
                 }
               ]
             },
@@ -141,7 +136,7 @@
         },
         {
           "type": "label",
-          "value": "Flat popover without floating title",
+          "value": "Flat without floating title",
           "styles": [
             {
               "self": [
@@ -153,11 +148,6 @@
           ]
         },
         {
-          "type": "button",
-          "id": "FPWFT_isSuggestionsOpenedButton",
-          "title": "isSuggestionsOpened"
-        },
-        {
           "type": "view",
           "orientation": "horizontal",
           "styles": [
@@ -165,24 +155,58 @@
           ],
           "elements": [
             {
-              "id": "FPWFT_popupButton",
               "type": "button",
-              "title": "popup"
+              "id": "FWFT_isSuggestionsOpenedButton",
+              "title": "isSuggestionsOpened"
             },
             {
-              "id": "FPWFT_getAttrsButton",
+              "id": "FWFT_getAttrsButton",
               "type": "button",
               "title": "get attrs"
             }
           ]
         },
         {
-          "type": "container",
-          "nestedScreen": "FlatPopoverWithoutFloatingTitleAutocomplete"
+          "id": "FWFT_dropdown",
+          "type": "dropdown",
+          "title": "placeholder",
+          "isFloatingTitle": false,
+          "kind": "flat",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "80%"
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
         },
         {
           "type": "label",
-          "value": "Flat fixed with floating title",
+          "value": "Flat with floating title",
           "styles": [
             {
               "self": [
@@ -201,24 +225,57 @@
           ],
           "elements": [
             {
-              "id": "FFFT_popupButton",
               "type": "button",
-              "title": "popup"
+              "id": "FFT_isSuggestionsOpenedButton",
+              "title": "isSuggestionsOpened"
             },
             {
-              "id": "FFFT_getAttrsButton",
+              "id": "FFT_getAttrsButton",
               "type": "button",
               "title": "get attrs"
             }
           ]
         },
         {
-          "type": "container",
-          "nestedScreen": "FlatFixedWithFloatingTitleAutocomplete"
+          "id": "FFT_dropdown",
+          "type": "dropdown",
+          "title": "placeholder",
+          "kind": "flat",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "80%"
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
         },
         {
           "type": "label",
-          "value": "Outlined popover without floating title",
+          "value": "Outlined without floating title",
           "styles": [
             {
               "self": [
@@ -230,11 +287,6 @@
           ]
         },
         {
-          "type": "button",
-          "id": "OPWFT_isSuggestionsOpenedButton",
-          "title": "isSuggestionsOpened"
-        },
-        {
           "type": "view",
           "orientation": "horizontal",
           "styles": [
@@ -242,24 +294,58 @@
           ],
           "elements": [
             {
-              "id": "OPWFT_popupButton",
               "type": "button",
-              "title": "popup"
+              "id": "OWFT_isSuggestionsOpenedButton",
+              "title": "isSuggestionsOpened"
             },
             {
-              "id": "OPWFT_getAttrsButton",
+              "id": "OWFT_getAttrsButton",
               "type": "button",
               "title": "get attrs"
             }
           ]
         },
         {
-          "type": "container",
-          "nestedScreen": "OutlinedPopoverWithoutFloatingTitleAutocomplete"
+          "id": "OWFT_dropdown",
+          "type": "dropdown",
+          "title": "placeholder",
+          "isFloatingTitle": false,
+          "kind": "outlined",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "80%"
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
         },
         {
           "type": "label",
-          "value": "Outlined fixed with floating title",
+          "value": "Outlined with floating title",
           "styles": [
             {
               "self": [
@@ -278,20 +364,53 @@
           ],
           "elements": [
             {
-              "id": "OFFT_popupButton",
               "type": "button",
-              "title": "popup"
+              "id": "OFT_isSuggestionsOpenedButton",
+              "title": "isSuggestionsOpened"
             },
             {
-              "id": "OFFT_getAttrsButton",
+              "id": "OFT_getAttrsButton",
               "type": "button",
               "title": "get attrs"
             }
           ]
         },
         {
-          "type": "container",
-          "nestedScreen": "OutlinedFixedWithFloatingTitleAutocomplete"
+          "id": "OFT_dropdown",
+          "type": "dropdown",
+          "title": "placeholder",
+          "kind": "outlined",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "80%"
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
         }
       ]
     }

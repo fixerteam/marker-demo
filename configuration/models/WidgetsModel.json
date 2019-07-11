@@ -38,8 +38,7 @@
         "screen": "AutocompleteWidget",
         "compatibility": {
           "ios": true,
-          "android": true,
-          "web": true
+          "android": true
         },
         "id": "autocompleteWidget"
       },
@@ -52,6 +51,15 @@
           "web": true
         },
         "id": "buttonWidget"
+      },
+      {
+        "name": "Dropdown",
+        "screen": "DropdownWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true
+        },
+        "id": "dropdownWidget"
       }
     ]
   }
