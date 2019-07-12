@@ -173,13 +173,10 @@
           "isFloatingTitle": false,
           "kind": "flat",
           "styles": [
-            {
-              "self": [
-                {
-                  "width": "80%"
-                }
-              ]
-            }
+            "dropdown_style"
+          ],
+          "activeStyles": [
+            "dropdown_active_style"
           ],
           "data": [
             {
@@ -242,13 +239,10 @@
           "title": "placeholder",
           "kind": "flat",
           "styles": [
-            {
-              "self": [
-                {
-                  "width": "80%"
-                }
-              ]
-            }
+            "dropdown_style"
+          ],
+          "activeStyles": [
+            "dropdown_active_style"
           ],
           "data": [
             {
@@ -312,13 +306,10 @@
           "isFloatingTitle": false,
           "kind": "outlined",
           "styles": [
-            {
-              "self": [
-                {
-                  "width": "80%"
-                }
-              ]
-            }
+            "dropdown_style"
+          ],
+          "activeStyles": [
+            "dropdown_active_style"
           ],
           "data": [
             {
@@ -381,13 +372,10 @@
           "title": "placeholder",
           "kind": "outlined",
           "styles": [
-            {
-              "self": [
-                {
-                  "width": "80%"
-                }
-              ]
-            }
+            "dropdown_style"
+          ],
+          "activeStyles": [
+            "dropdown_active_style"
           ],
           "data": [
             {
