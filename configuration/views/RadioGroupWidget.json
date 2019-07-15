@@ -1,0 +1,202 @@
+{
+  "name": "RadioGroupWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "id": "appbar",
+      "type": "appbar",
+      "title": "RadioGroup",
+      "leftIcon": "arrow-left",
+      "styles": [
+        "appbar_title_center"
+      ]
+    },
+    {
+      "type": "view",
+      "orientation": "vertical",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{radioGroupDescription}"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            "space_between",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "id": "visibilityCheckbox",
+                  "title": "visibility",
+                  "value": true
+                },
+                {
+                  "type": "checkbox",
+                  "id": "isReadOnlyCheckbox",
+                  "title": "readonly"
+                },
+                {
+                  "type": "button",
+                  "title": "expand",
+                  "id": "expandButton",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "type": "button",
+                  "title": "collapse",
+                  "id": "collapseButton",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "type": "button",
+                  "title": "toggle",
+                  "id": "toggleButton",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "left icon"
+                },
+                {
+                  "id": "iconRadioGroup",
+                  "type": "list",
+                  "displayType": "radioGroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": {
+                        "kind": "image",
+                        "icon": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg",
+                        "size": 30
+                      },
+                      "title": "image"
+                    },
+                    {
+                      "id": "1",
+                      "value": {
+                        "kind": "icon",
+                        "color": "#607D8B",
+                        "icon": "home",
+                        "size": 30
+                      },
+                      "title": "icon"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "title"
+                },
+                {
+                  "id": "titleRadioGroup",
+                  "type": "list",
+                  "displayType": "radioGroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "title",
+                      "title": "short"
+                    },
+                    {
+                      "id": "1",
+                      "value": "very very very very very very long title for accordion",
+                      "title": "long"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "verticalRadiogroupStart",
+          "type": "radiogroup",
+          "styles": [],
+          "activeStyles": [],
+          "disabledStyles": [],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

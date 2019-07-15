@@ -60,6 +60,15 @@
           "android": true
         },
         "id": "dropdownWidget"
+      },
+      {
+        "name": "RadioGroup",
+        "screen": "RadioGroupWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true
+        },
+        "id": "radioGroupWidget"
       }
     ]
   }
