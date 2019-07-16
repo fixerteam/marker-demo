@@ -161,8 +161,7 @@
                     },
                     {
                       "id": "leftIconRadioGroup",
-                      "type": "list",
-                      "displayType": "radioGroup",
+                      "type": "radiogroup",
                       "data": [
                         {
                           "id": "0",
@@ -191,8 +190,7 @@
                     },
                     {
                       "id": "menuIconRadioGroup",
-                      "type": "list",
-                      "displayType": "radioGroup",
+                      "type": "radiogroup",
                       "data": [
                         {
                           "id": "0",
@@ -221,8 +219,7 @@
                     },
                     {
                       "id": "titleRadioGroup",
-                      "type": "list",
-                      "displayType": "radioGroup",
+                      "type": "radiogroup",
                       "data": [
                         {
                           "id": "0",

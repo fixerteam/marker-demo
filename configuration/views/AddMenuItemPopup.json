@@ -54,8 +54,7 @@
             },
             {
               "id": "displayTypeRadioGroup",
-              "type": "list",
-              "displayType": "radioGroup",
+              "type": "radiogroup",
               "data": [
                 {
                   "id": "0",
@@ -90,8 +89,7 @@
             },
             {
               "id": "colorRadioGroup",
-              "type": "list",
-              "displayType": "radioGroup",
+              "type": "radiogroup",
               "data": [
                 {
                   "id": "0",
@@ -120,8 +118,7 @@
             },
             {
               "id": "iconRadioGroup",
-              "type": "list",
-              "displayType": "radioGroup",
+              "type": "radiogroup",
               "data": [
                 {
                   "id": "0",

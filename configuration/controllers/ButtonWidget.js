@@ -73,14 +73,14 @@ class ButtonWidget {
 
   bindIconRadioGroup() {
     const iconRadioGroup = this.view.getComponent('iconRadioGroup')
-    iconRadioGroup.onClick(item => {
+    iconRadioGroup.onSelect(item => {
       this.buttons.forEach(button => button.setAttrs({ icon: item.value }))
     })
   }
 
   bindTitleRadioGroup() {
     const titleRadioGroup = this.view.getComponent('titleRadioGroup')
-    titleRadioGroup.onClick(item => {
+    titleRadioGroup.onSelect(item => {
       this.buttons.forEach(button => button.setAttrs({ title: item.value }))
     })
   }

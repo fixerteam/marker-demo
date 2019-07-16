@@ -118,7 +118,7 @@ class AppbarWidget {
 
   bindLeftIconRadioGroup() {
     const leftIconRadioGroup = this.view.getComponent('leftIconRadioGroup')
-    leftIconRadioGroup.onClick(item => {
+    leftIconRadioGroup.onSelect(item => {
       this.appbar.setAttrs({ leftIcon: item.value })
     })
     leftIconRadioGroup.setValue('2')
@@ -126,7 +126,7 @@ class AppbarWidget {
 
   bindTitleRadioGroup() {
     const titleRadioGroup = this.view.getComponent('titleRadioGroup')
-    titleRadioGroup.onClick(item => {
+    titleRadioGroup.onSelect(item => {
       this.appbar.setAttrs({ title: item.value })
     })
     titleRadioGroup.setValue('2')
@@ -134,7 +134,7 @@ class AppbarWidget {
 
   bindMenuIconRadioGroup() {
     const menuIconRadioGroup = this.view.getComponent('menuIconRadioGroup')
-    menuIconRadioGroup.onClick(item => {
+    menuIconRadioGroup.onSelect(item => {
       this.appbar.setAttrs({ menuIcon: item.value })
     })
     menuIconRadioGroup.setValue('2')

@@ -81,14 +81,14 @@ class AccordionWidget {
 
   bindTitleRadioGroup() {
     const titleRadioGroup = this.view.getComponent('titleRadioGroup')
-    titleRadioGroup.onClick(item => {
+    titleRadioGroup.onSelect(item => {
       this.accordion.setAttrs({ title: item.value })
     })
   }
 
   bindIconRadioGroup() {
     const iconRadioGroup = this.view.getComponent('iconRadioGroup')
-    iconRadioGroup.onClick(item => {
+    iconRadioGroup.onSelect(item => {
       this.accordion.setAttrs({ leftIcon: item.value })
     })
   }
