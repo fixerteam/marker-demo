@@ -53,6 +53,16 @@
         "id": "buttonWidget"
       },
       {
+        "name": "Checkbox",
+        "screen": "CheckboxWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "checkboxWidget"
+      },
+      {
         "name": "Dropdown",
         "screen": "DropdownWidget",
         "compatibility": {

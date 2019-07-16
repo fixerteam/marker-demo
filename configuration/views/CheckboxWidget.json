@@ -1,0 +1,217 @@
+{
+  "name": "CheckboxWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "id": "appbar",
+      "type": "appbar",
+      "title": "Checkbox",
+      "leftIcon": "arrow-left",
+      "styles": [
+        "appbar_title_center"
+      ]
+    },
+    {
+      "type": "view",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{checkboxDescription}"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            "space_between",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "id": "isReadOnlyCheckbox",
+                  "title": "readonly"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "visibilityCheckbox",
+                  "title": "visibility",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "value"
+                },
+                {
+                  "id": "valueRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": true,
+                      "title": "true"
+                    },
+                    {
+                      "id": "1",
+                      "value": false,
+                      "title": "false"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "title"
+                },
+                {
+                  "id": "titleRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "title",
+                      "title": "short"
+                    },
+                    {
+                      "id": "1",
+                      "value": "very long title for button",
+                      "title": "long"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "with onChange, iconPlacement: start",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CRS_getAttrsButton",
+          "type": "button",
+          "title": "get attrs"
+        },
+        {
+          "id": "onChangeCheckbox",
+          "type": "checkbox",
+          "title": "first checkbox"
+        },
+        {
+          "type": "label",
+          "value": "iconPlacement: end, custom activeStyles and disabledStyles",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "CSE_getAttrsButton",
+          "type": "button",
+          "title": "get attrs"
+        },
+        {
+          "id": "customCheckbox",
+          "type": "checkbox",
+          "title": "second checkbox",
+          "iconPlacement": "end",
+          "styles": [
+            {
+              "icon": [
+                {
+                  "color": "#FF1122"
+                }
+              ]
+            }
+          ],
+          "activeStyles": [
+            {
+              "title": [
+                {
+                  "color": "#FF1122"
+                }
+              ],
+              "icon": [
+                {
+                  "color": "#FF1122"
+                }
+              ]
+            }
+          ],
+          "disabledStyles": [
+            {
+              "title": [
+                {
+                  "color": "#455A64"
+                }
+              ],
+              "icon": [
+                {
+                  "color": "#455A64"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
