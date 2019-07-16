@@ -69,30 +69,6 @@
                   "type": "checkbox",
                   "id": "isReadOnlyCheckbox",
                   "title": "readonly"
-                },
-                {
-                  "type": "button",
-                  "title": "expand",
-                  "id": "expandButton",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
-                },
-                {
-                  "type": "button",
-                  "title": "collapse",
-                  "id": "collapseButton",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
-                },
-                {
-                  "type": "button",
-                  "title": "toggle",
-                  "id": "toggleButton",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
                 }
               ]
             },
@@ -100,67 +76,27 @@
               "type": "view",
               "elements": [
                 {
-                  "type": "label",
-                  "value": "left icon"
-                },
-                {
-                  "id": "iconRadioGroup",
-                  "type": "list",
-                  "displayType": "radioGroup",
-                  "data": [
-                    {
-                      "id": "0",
-                      "value": {
-                        "kind": "image",
-                        "icon": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg",
-                        "size": 30
-                      },
-                      "title": "image"
-                    },
-                    {
-                      "id": "1",
-                      "value": {
-                        "kind": "icon",
-                        "color": "#607D8B",
-                        "icon": "home",
-                        "size": 30
-                      },
-                      "title": "icon"
-                    },
-                    {
-                      "id": "2",
-                      "title": "none"
-                    }
+                  "id": "setDataButton",
+                  "type": "button",
+                  "title": "set data",
+                  "styles": [
+                    "margin_vertical_8"
                   ]
-                }
-              ]
-            },
-            {
-              "type": "view",
-              "elements": [
-                {
-                  "type": "label",
-                  "value": "title"
                 },
                 {
-                  "id": "titleRadioGroup",
-                  "type": "list",
-                  "displayType": "radioGroup",
-                  "data": [
-                    {
-                      "id": "0",
-                      "value": "title",
-                      "title": "short"
-                    },
-                    {
-                      "id": "1",
-                      "value": "very very very very very very long title for accordion",
-                      "title": "long"
-                    },
-                    {
-                      "id": "2",
-                      "title": "none"
-                    }
+                  "id": "setValueButton",
+                  "type": "button",
+                  "title": "set value",
+                  "styles": [
+                    "margin_vertical_8"
+                  ]
+                },
+                {
+                  "id": "clearValueButton",
+                  "type": "button",
+                  "title": "clear value",
+                  "styles": [
+                    "margin_vertical_8"
                   ]
                 }
               ]
@@ -168,8 +104,217 @@
           ]
         },
         {
+          "type": "label",
+          "value": "with onSelect, iconPlacement: start",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "VRS_getAttrsButton",
+          "type": "button",
+          "title": "get attrs"
+        },
+        {
           "id": "verticalRadiogroupStart",
           "type": "radiogroup",
+          "styles": [],
+          "activeStyles": [],
+          "disabledStyles": [],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "iconPlacement: end, custom activeStyles and disabledStyles",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "VRE_getAttrsButton",
+          "type": "button",
+          "title": "get attrs"
+        },
+        {
+          "id": "verticalRadiogroupEnd",
+          "type": "radiogroup",
+          "iconPlacement": "end",
+          "styles": [
+            "width_full",
+            {
+              "listItem": [
+                {
+                  "width": "100%",
+                  "paddingVertical": 8
+                }
+              ],
+              "listItemTitle": [
+                {
+                  "paddingStart": 16
+                }
+              ],
+              "listItemIcon": [
+                {
+                  "color": "#FF1122"
+                }
+              ]
+            }
+          ],
+          "activeStyles": [
+            {
+              "listItemTitle": [
+                {
+                  "color": "#FF1122"
+                }
+              ],
+              "listItemIcon": [
+                {
+                  "color": "#FF1122"
+                }
+              ]
+            }
+          ],
+          "disabledStyles": [
+            {
+              "listItemTitle": [
+                {
+                  "color": "#455A64"
+                }
+              ],
+              "listItemIcon": [
+                {
+                  "color": "#455A64"
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "iconPlacement: horizontal, iconPlacement: start",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HRS_getAttrsButton",
+          "type": "button",
+          "title": "get attrs"
+        },
+        {
+          "id": "horizontalRadiogroupStart",
+          "type": "radiogroup",
+          "orientation": "horizontal",
+          "styles": [],
+          "activeStyles": [],
+          "disabledStyles": [],
+          "data": [
+            {
+              "id": "0",
+              "value": "apple"
+            },
+            {
+              "id": "1",
+              "value": "banana"
+            },
+            {
+              "id": "2",
+              "value": "cherry"
+            },
+            {
+              "id": "3",
+              "value": "durian"
+            },
+            {
+              "id": "4",
+              "value": "mango"
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "iconPlacement: horizontal, iconPlacement: end",
+          "styles": [
+            {
+              "self": [
+                {
+                  "marginTop": 32
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "HRE_getAttrsButton",
+          "type": "button",
+          "title": "get attrs"
+        },
+        {
+          "id": "horizontalRadiogroupEnd",
+          "type": "radiogroup",
+          "orientation": "horizontal",
+          "iconPlacement": "end",
           "styles": [],
           "activeStyles": [],
           "disabledStyles": [],
