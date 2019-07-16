@@ -63,6 +63,15 @@
         "id": "checkboxWidget"
       },
       {
+        "name": "CheckboxGroup",
+        "screen": "CheckboxGroupWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true
+        },
+        "id": "checkboxGroupWidget"
+      },
+      {
         "name": "Dropdown",
         "screen": "DropdownWidget",
         "compatibility": {
