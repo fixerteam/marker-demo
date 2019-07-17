@@ -116,6 +116,10 @@ class CheckboxGroupWidget {
   }
 
   bindOnSelectCase() {
-    this.checkboxgroups[0].onSelect(item => this.notifier.snackbar({ msg: item.reduce((acc, id) => `${acc}, ${id}`) }))
+    this.checkboxgroups[0].onSelect(values =>
+      this.notifier.snackbar({
+        msg: values.reduce((acc, value) => (acc ? `${acc}, ${value.id}` : `${value.id}`), '')
+      })
+    )
   }
 }
