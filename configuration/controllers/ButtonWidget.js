@@ -1,4 +1,6 @@
 const BUTTON_IDS = [
+  'iconStyledButton',
+  'iconDefaultButton',
   'textStyledButton',
   'textDefaultButton',
   'outlinedStyledButton',

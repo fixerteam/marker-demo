@@ -159,6 +159,36 @@
         },
         {
           "type": "label",
+          "value": "kind: icon"
+        },
+        {
+          "id": "iconStyledButton",
+          "type": "button",
+          "kind": "icon",
+          "icon": "home",
+          "styles": [
+            "margin_vertical_8",
+            {
+              "self": [
+                {
+                  "width": 48,
+                  "height": 48,
+                  "backgroundColor": "#8BC34A"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "iconDefaultButton",
+          "type": "button",
+          "kind": "icon",
+          "styles": [
+            "margin_vertical_8"
+          ]
+        },
+        {
+          "type": "label",
           "value": "kind: outlined"
         },
         {
