@@ -1,0 +1,486 @@
+{
+  "name": "DateTimeWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "view",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{dateTimeDescription}"
+        },
+        {
+          "type": "view",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "width_full",
+                "space_between"
+              ],
+              "elements": [
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "checkbox",
+                      "id": "visibilityCheckbox",
+                      "title": "visibility",
+                      "value": true
+                    },
+                    {
+                      "type": "checkbox",
+                      "id": "isReadOnlyCheckbox",
+                      "title": "readonly"
+                    },
+                    {
+                      "type": "checkbox",
+                      "id": "errorCheckbox",
+                      "title": "error"
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "format"
+                    },
+                    {
+                      "id": "formatRadioGroup",
+                      "type": "radiogroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "DD.MM.YYYY HH:mm"
+                        },
+                        {
+                          "id": "1",
+                          "value": "YYYY-MM-DD HH:mm"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "width_full",
+                "space_between",
+                "margin_vertical_8"
+              ],
+              "elements": [
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "title"
+                    },
+                    {
+                      "id": "titleRadioGroup",
+                      "type": "radiogroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "title"
+                        },
+                        {
+                          "id": "1",
+                          "title": "none"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "maxDate"
+                    },
+                    {
+                      "id": "maxDateRadioGroup",
+                      "type": "radiogroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "now"
+                        },
+                        {
+                          "id": "1",
+                          "value": "none"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "minDate"
+                    },
+                    {
+                      "id": "minDateRadioGroup",
+                      "type": "radiogroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "now"
+                        },
+                        {
+                          "id": "1",
+                          "value": "none"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "width_full",
+                "space_between"
+              ],
+              "elements": [
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "okLabel"
+                    },
+                    {
+                      "id": "okLabelRadioGroup",
+                      "type": "radiogroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "default"
+                        },
+                        {
+                          "id": "1",
+                          "value": "custom"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "cancelLabel"
+                    },
+                    {
+                      "id": "cancelLabelRadioGroup",
+                      "type": "radiogroup",
+                      "data": [
+                        {
+                          "id": "0",
+                          "value": "default"
+                        },
+                        {
+                          "id": "1",
+                          "value": "custom"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "view",
+                  "elements": [
+                    {
+                      "type": "label",
+                      "value": "value"
+                    },
+                    {
+                      "id": "addYearButton",
+                      "type": "button",
+                      "kind": "text",
+                      "title": "+year"
+                    },
+                    {
+                      "id": "subYearButton",
+                      "type": "button",
+                      "kind": "text",
+                      "title": "-year"
+                    },
+                    {
+                      "id": "cleanValueButton",
+                      "type": "button",
+                      "kind": "text",
+                      "title": "clean"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "displayType: date, kind: flat"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "DF_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "DF_getValueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "DF_getFormattedValueButton",
+              "type": "button",
+              "title": "formatted"
+            }
+          ]
+        },
+        {
+          "id": "DF_datetime",
+          "type": "datetime",
+          "displayTime": "date",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "displayType: time, kind: flat, isFloatingTitle: false"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "TF_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "TF_getValueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "TF_getFormattedValueButton",
+              "type": "button",
+              "title": "formatted"
+            }
+          ]
+        },
+        {
+          "id": "TF_datetime",
+          "type": "datetime",
+          "displayTime": "time",
+          "isFloatingTitle": false,
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "displayType: datetime, kind: flat, custom styles"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "DTF_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "DTF_getValueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "DTF_getFormattedValueButton",
+              "type": "button",
+              "title": "formatted"
+            }
+          ]
+        },
+        {
+          "id": "DTF_datetime",
+          "type": "datetime",
+          "displayTime": "datetime",
+          "activeStyles": [],
+          "disabledStyles": [],
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "displayType: date, kind: outlined"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "DO_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "DO_getValueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "DO_getFormattedValueButton",
+              "type": "button",
+              "title": "formatted"
+            }
+          ]
+        },
+        {
+          "id": "DO_datetime",
+          "type": "datetime",
+          "displayTime": "date",
+          "kind": "outlined",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "displayType: time, kind: outlined, isFloatingTitle: false"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "TO_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "TO_getValueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "TO_getFormattedValueButton",
+              "type": "button",
+              "title": "formatted"
+            }
+          ]
+        },
+        {
+          "id": "TO_datetime",
+          "type": "datetime",
+          "displayTime": "time",
+          "kind": "outlined",
+          "isFloatingTitle": false,
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "displayType: datetime, kind: outlined, custom styles"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "elements": [
+            {
+              "id": "DTO_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "DTO_getValueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "DTO_getFormattedValueButton",
+              "type": "button",
+              "title": "formatted"
+            }
+          ]
+        },
+        {
+          "id": "DTO_datetime",
+          "type": "datetime",
+          "displayTime": "date",
+          "kind": "outlined",
+          "activeStyles": [],
+          "disabledStyles": [],
+          "styles": [
+            "margin_vertical_16"
+          ]
+        }
+      ]
+    }
+  ]
+}

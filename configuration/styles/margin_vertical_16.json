@@ -1,0 +1,15 @@
+{
+  "name": "margin_vertical_16",
+  "type": "style",
+  "value": {
+    "self": [
+      {
+        "marginTop": 16,
+        "marginBottom": 16
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}
