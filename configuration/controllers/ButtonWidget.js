@@ -29,8 +29,9 @@ class ButtonWidget {
   }
 
   bindAppbar() {
-    const appbar = this.view.getComponent('appbar')
+    const appbar = this.view.getComponent('AppbarBlock')
     appbar.onLeftIconClick(() => this.navigator.pop())
+    appbar.setAttrs({ title: 'Button' })
   }
 
   bindButtons() {

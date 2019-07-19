@@ -7,13 +7,8 @@
   ],
   "elements": [
     {
-      "id": "appbar",
-      "type": "appbar",
-      "title": "RadioGroup",
-      "leftIcon": "arrow-left",
-      "styles": [
-        "appbar_title_center"
-      ]
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
     },
     {
       "type": "view",
