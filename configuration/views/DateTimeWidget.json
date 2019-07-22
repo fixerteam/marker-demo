@@ -296,7 +296,7 @@
         {
           "id": "DF_datetime",
           "type": "datetime",
-          "displayTime": "date",
+          "displayType": "date",
           "styles": [
             "margin_vertical_16"
           ]
@@ -330,7 +330,7 @@
         {
           "id": "TF_datetime",
           "type": "datetime",
-          "displayTime": "time",
+          "displayType": "time",
           "isFloatingTitle": false,
           "styles": [
             "margin_vertical_16"
@@ -365,7 +365,7 @@
         {
           "id": "DTF_datetime",
           "type": "datetime",
-          "displayTime": "datetime",
+          "displayType": "datetime",
           "activeStyles": [],
           "disabledStyles": [],
           "styles": [
@@ -436,7 +436,7 @@
         {
           "id": "TO_datetime",
           "type": "datetime",
-          "displayTime": "time",
+          "displayType": "time",
           "kind": "outlined",
           "isFloatingTitle": false,
           "styles": [
@@ -472,7 +472,7 @@
         {
           "id": "DTO_datetime",
           "type": "datetime",
-          "displayTime": "date",
+          "displayType": "date",
           "kind": "outlined",
           "activeStyles": [],
           "disabledStyles": [],
