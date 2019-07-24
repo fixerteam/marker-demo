@@ -88,7 +88,12 @@ class DateTimeWidget {
       )
 
       const valueButton = this.view.getComponent(block.valueButtonId)
-      valueButton.onClick(() => this.notifier.snackbar({ msg: datetime.getValue() }))
+      valueButton.onClick(() => {
+        const datetimeValue = datetime.getValue()
+        if (datetimeValue) {
+          this.notifier.snackbar({ msg: datetimeValue.toString() })
+        }
+      })
 
       const formattedValueButton = this.view.getComponent(block.formattedValueButtonId)
       formattedValueButton.onClick(() => this.notifier.snackbar({ msg: datetime.getFormattedValue() }))
@@ -163,7 +168,7 @@ class DateTimeWidget {
     const cancelLabelRadioGroup = this.view.getComponent('cancelLabelRadioGroup')
     cancelLabelRadioGroup.onSelect(item =>
       this.datetimes.forEach(datetime =>
-        datetime.setAttrs({ okLabel: item.value === 'default' ? '{cancelLabel}' : '{cancelDate}' })
+        datetime.setAttrs({ cancelLabel: item.value === 'default' ? '{cancelLabel}' : '{cancelDate}' })
       )
     )
   }

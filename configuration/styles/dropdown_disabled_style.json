@@ -1,0 +1,19 @@
+{
+  "name": "dropdown_disabled_style",
+  "type": "style",
+  "value": {
+    "self": [
+      {
+        "color": "#777777"
+      }
+    ],
+    "text": [
+      {
+        "color": "#777777"
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

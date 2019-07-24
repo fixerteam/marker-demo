@@ -17,6 +17,11 @@
     "autocompletePlaceholder": "Начните набор текста",
     "autocompleteError": "Ошибка ввода",
     "dropdownPlaceholder": "Выберите значение",
-    "dropdownError": "Некорректное значение"
+    "dropdownError": "Некорректное значение",
+    "enterDate": "Введите дату",
+    "okLabel": "Ок",
+    "chooseDate": "Выбрать",
+    "cancelLabel": "Отмена",
+    "cancelDate": "Закрыть"
   }
 }

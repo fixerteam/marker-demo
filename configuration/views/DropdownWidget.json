@@ -198,7 +198,7 @@
         },
         {
           "type": "label",
-          "value": "Flat with floating title",
+          "value": "Flat with floating title and custom styles",
           "styles": [
             {
               "self": [
@@ -238,6 +238,9 @@
           ],
           "activeStyles": [
             "dropdown_active_style"
+          ],
+          "disabledStyles": [
+            "dropdown_disabled_style"
           ],
           "data": [
             {
@@ -331,7 +334,7 @@
         },
         {
           "type": "label",
-          "value": "Outlined with floating title",
+          "value": "Outlined with floating title and custom styles",
           "styles": [
             {
               "self": [
@@ -371,6 +374,9 @@
           ],
           "activeStyles": [
             "dropdown_active_style"
+          ],
+          "disabledStyles": [
+            "dropdown_disabled_style"
           ],
           "data": [
             {

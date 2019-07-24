@@ -17,6 +17,11 @@
     "autocompletePlaceholder": "Start typing",
     "autocompleteError": "Typing error",
     "dropdownPlaceholder": "Select value",
-    "dropdownError": "Incorrect value"
+    "dropdownError": "Incorrect value",
+    "enterDate": "Enter date",
+    "okLabel": "OK",
+    "chooseDate": "Choose",
+    "cancelLabel": "Cancel",
+    "cancelDate": "Close"
   }
 }
