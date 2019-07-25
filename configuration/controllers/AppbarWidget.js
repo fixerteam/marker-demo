@@ -19,16 +19,17 @@ class AppbarWidget {
     this.bindTitleRadioGroup()
     this.bindMenuIconRadioGroup()
     this.bindAddMenuItemButton()
-    this.bindRemoveAllMenuItems()
+    this.bindUpdateMenuItemButton()
+    this.bindRemoveLastMenuItem()
   }
 
-  onResume(params) {
-    if (params && params.menuItem) {
-      const menuItems = this.appbar.getAttrs().elements
-      const newMenuItem = params.menuItem
-      newMenuItem.id = `item${menuItems.length}`
-      menuItems.push(newMenuItem)
-      this.appbar.setAttrs({ elements: menuItems })
+  onResume({ menuItem, isUpdate } = {}) {
+    if (menuItem) {
+      if (isUpdate) {
+        this.appbar.updateMenuItem(menuItem)
+      } else {
+        this.appbar.addMenuItem(menuItem)
+      }
     }
   }
 
@@ -107,14 +108,45 @@ class AppbarWidget {
     })
   }
 
-  bindAddMenuItemButton() {
-    const addItemButton = this.view.getComponent('addItemButton')
-    addItemButton.onClick(() => this.navigator.push({ id: 'AddMenuItemPopup', isPopup: true }))
+  addMenuItemAction() {
+    const menuItems = this.appbar.getAttrs().elements
+    this.navigator.push({
+      id: 'MenuItemPopup',
+      isPopup: true,
+      params: { menuIds: menuItems.map(item => item.id) }
+    })
   }
 
-  bindRemoveAllMenuItems() {
-    const removeItemsButton = this.view.getComponent('removeItemsButton')
-    removeItemsButton.onClick(() => this.appbar.setAttrs({ elements: [] }))
+  bindAddMenuItemButton() {
+    const addItemButton = this.view.getComponent('addItemButton')
+    addItemButton.onClick(() => this.addMenuItemAction())
+  }
+
+  bindUpdateMenuItemButton() {
+    const updateItemButton = this.view.getComponent('updateItemButton')
+    updateItemButton.onClick(() => {
+      const menuItems = this.appbar.getAttrs().elements
+      if (menuItems.length > 0) {
+        this.navigator.push({
+          id: 'MenuItemPopup',
+          isPopup: true,
+          params: { isUpdate: true, menuIds: menuItems.map(item => item.id) }
+        })
+      } else {
+        this.addMenuItemAction()
+      }
+    })
+  }
+
+  bindRemoveLastMenuItem() {
+    const removeItemButton = this.view.getComponent('removeItemButton')
+    removeItemButton.onClick(() => {
+      const menuItems = this.appbar.getAttrs().elements
+      if (menuItems.length > 0) {
+        const lastMenuItems = menuItems[menuItems.length - 1]
+        this.appbar.removeMenuItem(lastMenuItems.id)
+      }
+    })
   }
 
   bindLeftIconRadioGroup() {

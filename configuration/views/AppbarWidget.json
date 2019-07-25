@@ -100,6 +100,14 @@
                       "styles": [
                         "margin_vertical_8"
                       ]
+                    },
+                    {
+                      "type": "button",
+                      "title": "getAttrs",
+                      "id": "getAttrsButton",
+                      "styles": [
+                        "margin_vertical_8"
+                      ]
                     }
                   ]
                 }
@@ -123,16 +131,16 @@
                 },
                 {
                   "type": "button",
-                  "title": "removeItems",
-                  "id": "removeItemsButton",
+                  "title": "updateItem",
+                  "id": "updateItemButton",
                   "styles": [
                     "margin_vertical_8"
                   ]
                 },
                 {
                   "type": "button",
-                  "title": "getAttrs",
-                  "id": "getAttrsButton",
+                  "title": "removeItem",
+                  "id": "removeItemButton",
                   "styles": [
                     "margin_vertical_8"
                   ]

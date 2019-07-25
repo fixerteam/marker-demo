@@ -131,16 +131,19 @@ class DateTimeWidget {
 
   bindFormatRadioGroup() {
     const formatRadioGroup = this.view.getComponent('formatRadioGroup')
+    formatRadioGroup.setValue('0')
     formatRadioGroup.onSelect(item => this.datetimes.forEach(datetime => datetime.setAttrs({ format: item.value })))
   }
 
   bindTitleRadioGroup() {
     const titleRadioGroup = this.view.getComponent('titleRadioGroup')
+    titleRadioGroup.setValue('1')
     titleRadioGroup.onSelect(item => this.datetimes.forEach(datetime => datetime.setAttrs({ title: item.value })))
   }
 
   bindMaxDateRadioGroup() {
     const maxDateRadioGroup = this.view.getComponent('maxDateRadioGroup')
+    maxDateRadioGroup.setValue('1')
     maxDateRadioGroup.onSelect(item =>
       this.datetimes.forEach(datetime => datetime.setAttrs({ maxDate: item.value === 'now' ? new Date() : undefined }))
     )
@@ -148,6 +151,7 @@ class DateTimeWidget {
 
   bindMinDateRadioGroup() {
     const minDateRadioGroup = this.view.getComponent('minDateRadioGroup')
+    minDateRadioGroup.setValue('1')
     minDateRadioGroup.onSelect(item =>
       this.datetimes.forEach(datetime =>
         datetime.setAttrs({ minDate: item.value === 'now' ? datetime.getValue() : undefined })
@@ -157,6 +161,7 @@ class DateTimeWidget {
 
   bindOkLabelRadioGroup() {
     const okLabelRadioGroup = this.view.getComponent('okLabelRadioGroup')
+    okLabelRadioGroup.setValue('0')
     okLabelRadioGroup.onSelect(item =>
       this.datetimes.forEach(datetime =>
         datetime.setAttrs({ okLabel: item.value === 'default' ? '{okLabel}' : '{chooseDate}' })
@@ -166,6 +171,7 @@ class DateTimeWidget {
 
   bindCancelLabelRadioGroup() {
     const cancelLabelRadioGroup = this.view.getComponent('cancelLabelRadioGroup')
+    cancelLabelRadioGroup.setValue('0')
     cancelLabelRadioGroup.onSelect(item =>
       this.datetimes.forEach(datetime =>
         datetime.setAttrs({ cancelLabel: item.value === 'default' ? '{cancelLabel}' : '{cancelDate}' })

@@ -1,5 +1,5 @@
 {
-  "name": "AddMenuItemPopup",
+  "name": "MenuItemPopup",
   "type": "view",
   "align": "center_top",
   "styles": [
@@ -7,7 +7,7 @@
       "self": [
         {
           "width": "80%",
-          "height": "50%",
+          "height": "70%",
           "backgroundColor": "#fafafa"
         }
       ]
@@ -15,8 +15,8 @@
   ],
   "elements": [
     {
+      "id": "popupTitle",
       "type": "label",
-      "value": "{addMenuItem}",
       "styles": [
         "margin_all_16",
         {
@@ -25,6 +25,20 @@
               "fontSize": 18,
               "fontWeight": "bold",
               "color": "#000"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "menuItemsDropdown",
+      "type": "dropdown",
+      "visibility": false,
+      "styles": [
+        {
+          "self": [
+            {
+              "width": 200
             }
           ]
         }
