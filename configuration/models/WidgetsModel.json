@@ -91,6 +91,16 @@
         "id": "dropdownWidget"
       },
       {
+        "name": "Image",
+        "screen": "ImageWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "imageWidget"
+      },
+      {
         "name": "RadioGroup",
         "screen": "RadioGroupWidget",
         "compatibility": {

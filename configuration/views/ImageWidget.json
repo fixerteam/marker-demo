@@ -1,0 +1,156 @@
+{
+  "name": "ImageWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "view",
+      "orientation": "vertical",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{imageDescription}"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            "space_between",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "id": "visibilityCheckbox",
+                  "title": "visibility",
+                  "value": true
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "value"
+                },
+                {
+                  "id": "valueRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "https://pp.userapi.com/c840127/v840127031/7770a/2sV_CIthl8A.jpg",
+                      "title": "marm"
+                    },
+                    {
+                      "id": "1",
+                      "value": "https://backiee.com/static/wpdb/wallpapers/3840x2160/216380.jpg",
+                      "title": "hd"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "fit"
+                },
+                {
+                  "id": "fitRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "cover"
+                    },
+                    {
+                      "id": "1",
+                      "value": "contain"
+                    },
+                    {
+                      "id": "2",
+                      "value": "fill"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "simpleImage",
+          "type": "image",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "90%",
+                  "height": 300,
+                  "marginTop": 30
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "clickableImage",
+          "type": "image",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "90%",
+                  "height": 300,
+                  "marginTop": 30
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
