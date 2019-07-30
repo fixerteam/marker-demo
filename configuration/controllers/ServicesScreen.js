@@ -14,7 +14,7 @@ class ServicesScreen {
       item.isAndroidIcon.setAttrs({ visibility: data.compatibility.android })
       item.isIosIcon.setAttrs({ visibility: data.compatibility.ios })
     })
-    servicesList.onClick(item => this.notifier.snackbar({ msg: `${item.name} service WIP`, duration: 3000 }))
+    servicesList.onItemClick(item => this.notifier.snackbar({ msg: `${item.name} service WIP`, duration: 3000 }))
 
     const servicesListData = await this.model.get('ServicesModel').allDocs()
     servicesList.setData(servicesListData)
