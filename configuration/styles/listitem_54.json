@@ -1,0 +1,28 @@
+{
+  "name": "listitem_54",
+  "type": "style",
+  "value": {
+    "listItem": [
+      {
+        "height": 100,
+        "justifyContent": "center"
+      }
+    ],
+    "itemSeparator": [
+      {
+        "height": 1,
+        "marginHorizontal": 16
+      }
+    ],
+    "columnSeparator": [
+      {
+        "width": 1,
+        "marginBottom": 16,
+        "marginTop": 16
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

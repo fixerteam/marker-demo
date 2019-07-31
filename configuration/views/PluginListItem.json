@@ -2,8 +2,10 @@
   "name": "PluginListItem",
   "type": "view",
   "orientation": "horizontal",
+  "align": "left_center",
   "styles": [
-    "padding_all_16"
+    "padding_all_16",
+    "width_full"
   ],
   "elements": [
     {
@@ -12,7 +14,8 @@
         {
           "self": [
             {
-              "flex": 1
+              "flex": 1,
+              "flexWrap": "nowrap"
             }
           ]
         }

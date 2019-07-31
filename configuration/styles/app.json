@@ -13,7 +13,8 @@
           "accent": "#FFC107",
           "darkPrimary": "#455A64",
           "lightPrimary": "#CFD8DC",
-          "primary": "#607D8B"
+          "primary": "#607D8B",
+          "divider": "#0000001f"
         }
       ]
     }

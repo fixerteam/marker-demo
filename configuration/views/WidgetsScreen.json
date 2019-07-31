@@ -2,6 +2,10 @@
   "name": "WidgetsScreen",
   "type": "list",
   "itemTemplate": "PluginListItem",
+  "styles": [
+    "listitem_54"
+  ],
+  "columns": 3,
   "id": "5d08e6dc7adf8408008b4578",
   "uptime": 1560953919
 }
