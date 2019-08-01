@@ -1,0 +1,17 @@
+{
+  // Документацию по формату tasks.json см.
+  // по адресу https://go.microsoft.com/fwlink/?LinkId=733558
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start server",
+      "type": "shell",
+      "command": "cd proxy && npm start -- ../configuration",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$go"
+    }
+  ]
+}

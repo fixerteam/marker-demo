@@ -1,0 +1,95 @@
+{
+  "name": "ListWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "view",
+      "orientation": "vertical",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{listDescription}"
+        },
+        {
+          "type": "list",
+          "id": "menuList",
+          "styles": [
+            "width_full",
+            {
+              "listItem": [
+                {
+                  "height": 54,
+                  "justifyContent": "center"
+                }
+              ],
+              "itemSeparator": [
+                {
+                  "height": 1,
+                  "marginHorizontal": 16
+                }
+              ]
+            }
+          ],
+          "itemTemplate": "WidgetListItem",
+          "data": [
+            {
+              "id": "default",
+              "title": "Default list, json data",
+              "value": "DefaultList"
+            },
+            {
+              "id": "refreshable",
+              "title": "List with onRefresh, separated"
+            },
+            {
+              "id": "paging",
+              "title": "List with paging, custom template, separated"
+            },
+            {
+              "id": "large",
+              "title": "Large list with paging, custom template"
+            },
+            {
+              "id": "virtualizationOff",
+              "title": "Large list without virtualization, custom template"
+            },
+            {
+              "id": "horizontal",
+              "title": "Horizontal lists"
+            },
+            {
+              "id": "columns",
+              "title": "Default list with columns"
+            },
+            {
+              "id": "separatedColumns",
+              "title": "List with custom template, separated, columns"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

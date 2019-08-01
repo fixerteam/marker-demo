@@ -1,0 +1,15 @@
+{
+  "name": "listitem_56",
+  "type": "style",
+  "value": {
+    "itemSeparator": [
+      {
+        "height": 1,
+        "marginHorizontal": 16
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

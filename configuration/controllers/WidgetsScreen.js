@@ -23,24 +23,24 @@ class WidgetsScreen {
         this.notifier.snackbar({ msg: `${item.name} widget WIP`, duration: 3000 })
       }
     })
-    widgetsList.setOnEndReached(() => {
-      widgetsList.setRefreshState(true)
-      setTimeout(() => {
-        widgetsList.addData(
-          [...Array(100).keys()].map(() => {
-            const randomId = this.randomGenerator.randomId()
-            return { name: randomId, compatibility: { ios: true, android: true, web: true }, id: randomId }
-          })
-        )
-        widgetsList.setRefreshState(false)
-      }, 2000)
-    })
-    widgetsList.setOnRefresh(async () => {
-      widgetsList.setRefreshState(true)
-      const widgetsListData = await this.model.get('WidgetsModel').allDocs()
-      widgetsList.setData(widgetsListData)
-      widgetsList.setRefreshState(false)
-    })
+    // widgetsList.setOnEndReached(() => {
+    //   widgetsList.setRefreshState(true)
+    //   setTimeout(() => {
+    //     widgetsList.addData(
+    //       [...Array(100).keys()].map(() => {
+    //         const randomId = this.randomGenerator.randomId()
+    //         return { name: randomId, compatibility: { ios: true, android: true, web: true }, id: randomId }
+    //       })
+    //     )
+    //     widgetsList.setRefreshState(false)
+    //   }, 2000)
+    // })
+    // widgetsList.setOnRefresh(async () => {
+    //   widgetsList.setRefreshState(true)
+    //   const widgetsListData = await this.model.get('WidgetsModel').allDocs()
+    //   widgetsList.setData(widgetsListData)
+    //   widgetsList.setRefreshState(false)
+    // })
 
     const widgetsListData = await this.model.get('WidgetsModel').allDocs()
     widgetsList.setData(widgetsListData)

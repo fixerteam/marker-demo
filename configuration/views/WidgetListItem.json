@@ -1,5 +1,5 @@
 {
-  "name": "PluginListItem",
+  "name": "WidgetListItem",
   "type": "view",
   "orientation": "horizontal",
   "align": "left_center",
@@ -23,21 +23,8 @@
     },
     {
       "type": "icon",
-      "color": "#039BE5",
-      "value": "web",
-      "id": "isWebIcon"
-    },
-    {
-      "type": "icon",
-      "color": "#64DD17",
-      "value": "android",
-      "id": "isAndroidIcon"
-    },
-    {
-      "type": "icon",
-      "color": "#212121",
-      "value": "apple",
-      "id": "isIosIcon"
+      "color": "#607D8B",
+      "value": "chevron-right"
     }
   ],
   "id": "5d0a421c7adf840a008b457d",

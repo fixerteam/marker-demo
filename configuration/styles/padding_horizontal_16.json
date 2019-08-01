@@ -1,0 +1,14 @@
+{
+  "name": "padding_horizontal_16",
+  "type": "style",
+  "value": {
+    "self": [
+      {
+        "paddingHorizontal": 16
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

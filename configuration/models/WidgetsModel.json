@@ -101,6 +101,15 @@
         "id": "imageWidget"
       },
       {
+        "name": "List",
+        "screen": "ListWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true
+        },
+        "id": "listWidget"
+      },
+      {
         "name": "RadioGroup",
         "screen": "RadioGroupWidget",
         "compatibility": {

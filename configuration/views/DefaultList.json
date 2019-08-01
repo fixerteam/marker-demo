@@ -1,0 +1,174 @@
+{
+  "name": "DefaultList",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "list",
+      "styles": [
+        "width_full"
+      ],
+      "data": [
+        {
+          "id": "Acura",
+          "value": "Acura"
+        },
+        {
+          "id": "Alfa Romeo",
+          "value": "Alfa Romeo"
+        },
+        {
+          "id": "Audi",
+          "value": "Audi"
+        },
+        {
+          "id": "BMW",
+          "value": "BMW"
+        },
+        {
+          "id": "BYD",
+          "value": "BYD"
+        },
+        {
+          "id": "Bentley",
+          "value": "Bentley"
+        },
+        {
+          "id": "Brilliance",
+          "value": "Brilliance"
+        },
+        {
+          "id": "Cadillac",
+          "value": "Cadillac"
+        },
+        {
+          "id": "ChangFeng",
+          "value": "ChangFeng"
+        },
+        {
+          "id": "Changan",
+          "value": "Changan"
+        },
+        {
+          "id": "Chery",
+          "value": "Chery"
+        },
+        {
+          "id": "Chevrolet",
+          "value": "Chevrolet"
+        },
+        {
+          "id": "Chrysler",
+          "value": "Chrysler"
+        },
+        {
+          "id": "Citroen",
+          "value": "Citroen"
+        },
+        {
+          "id": "DW Hower",
+          "value": "DW Hower"
+        },
+        {
+          "id": "Dacia",
+          "value": "Dacia"
+        },
+        {
+          "id": "Daewoo",
+          "value": "Daewoo"
+        },
+        {
+          "id": "Daihatsu",
+          "value": "Daihatsu"
+        },
+        {
+          "id": "Datsun",
+          "value": "Datsun"
+        },
+        {
+          "id": "Derways",
+          "value": "Derways"
+        },
+        {
+          "id": "Dodge",
+          "value": "Dodge"
+        },
+        {
+          "id": "DongFeng",
+          "value": "DongFeng"
+        },
+        {
+          "id": "FAW",
+          "value": "FAW"
+        },
+        {
+          "id": "Ferrari",
+          "value": "Ferrari"
+        },
+        {
+          "id": "Fiat",
+          "value": "Fiat"
+        },
+        {
+          "id": "Ford",
+          "value": "Ford"
+        },
+        {
+          "id": "Foton",
+          "value": "Foton"
+        },
+        {
+          "id": "Geely",
+          "value": "Geely"
+        },
+        {
+          "id": "Genesis",
+          "value": "Genesis"
+        },
+        {
+          "id": "Great Wall",
+          "value": "Great Wall"
+        },
+        {
+          "id": "Haima",
+          "value": "Haima"
+        },
+        {
+          "id": "Haval",
+          "value": "Haval"
+        },
+        {
+          "id": "Hawtai",
+          "value": "Hawtai"
+        },
+        {
+          "id": "Honda",
+          "value": "Honda"
+        },
+        {
+          "id": "Hyundai",
+          "value": "Hyundai"
+        },
+        {
+          "id": "Infiniti",
+          "value": "Infiniti"
+        },
+        {
+          "id": "Isuzu",
+          "value": "Isuzu"
+        },
+        {
+          "id": "JAC",
+          "value": "JAC"
+        }
+      ]
+    }
+  ]
+}
