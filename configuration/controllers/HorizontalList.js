@@ -1,12 +1,14 @@
-class DefaultList {
-  onCreate({ view, navigator, model, randomGenerator }, { id, title }) {
+const LIST_IDS = ['refreshable', 'paging', 'large', 'virtualizationOff']
+
+class HorizontalList {
+  onCreate({ view, navigator, model, randomGenerator }, { title }) {
     this.view = view
     this.navigator = navigator
     this.model = model
     this.randomGenerator = randomGenerator
 
     this.bindAppbar(title)
-    this.bindList(id)
+    LIST_IDS.forEach(list => this.bindList(list))
   }
 
   bindAppbar(title) {
@@ -17,7 +19,6 @@ class DefaultList {
 
   async bindList(id) {
     const list = this.view.getComponent(id)
-    list.setAttrs({ visibility: true })
     switch (id) {
       case 'refreshable': {
         this.setListRefresh(list)

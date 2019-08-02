@@ -27,7 +27,7 @@ class ListWidget {
     })
     menuList.onItemClick(item => {
       if (item.value) {
-        this.navigator.push({ id: item.value })
+        this.navigator.push({ id: item.value, params: { id: item.id, title: item.title } })
       }
     })
   }

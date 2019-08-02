@@ -61,31 +61,38 @@
             },
             {
               "id": "refreshable",
-              "title": "List with onRefresh, separated"
+              "title": "List with onRefresh, separated",
+              "value": "DefaultList"
             },
             {
               "id": "paging",
-              "title": "List with paging, custom template, separated"
+              "title": "List with paging, custom template, separated",
+              "value": "DefaultList"
             },
             {
               "id": "large",
-              "title": "Large list with paging, custom template"
+              "title": "Large list with paging, custom template",
+              "value": "DefaultList"
             },
             {
               "id": "virtualizationOff",
-              "title": "Large list without virtualization, custom template"
+              "title": "Large list without virtualization, custom template",
+              "value": "DefaultList"
             },
             {
               "id": "horizontal",
-              "title": "Horizontal lists"
+              "title": "Horizontal lists",
+              "value": "HorizontalList"
             },
             {
               "id": "columns",
-              "title": "Default list with columns"
+              "title": "Default list with columns",
+              "value": "DefaultList"
             },
             {
               "id": "separatedColumns",
-              "title": "List with custom template, separated, columns"
+              "title": "List with custom template, separated, columns",
+              "value": "DefaultList"
             }
           ]
         }

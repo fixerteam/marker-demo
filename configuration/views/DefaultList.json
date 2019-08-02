@@ -11,7 +11,9 @@
       "nestedScreen": "AppbarBlock"
     },
     {
+      "id": "default",
       "type": "list",
+      "visibility": false,
       "styles": [
         "width_full"
       ],
@@ -169,6 +171,215 @@
           "value": "JAC"
         }
       ]
+    },
+    {
+      "id": "refreshable",
+      "type": "list",
+      "visibility": false,
+      "styles": [
+        "width_full",
+        "list_separator_1"
+      ],
+      "data": [
+        {
+          "id": "0",
+          "value": "Audi"
+        },
+        {
+          "id": "1",
+          "value": "Bmw"
+        },
+        {
+          "id": "2",
+          "value": "Citroen"
+        },
+        {
+          "id": "3",
+          "value": "Dodge"
+        },
+        {
+          "id": "4",
+          "value": "Honda"
+        },
+        {
+          "id": "5",
+          "value": "Lexus"
+        },
+        {
+          "id": "6",
+          "value": "Nissan"
+        },
+        {
+          "id": "7",
+          "value": "Porsche"
+        }
+      ]
+    },
+    {
+      "id": "paging",
+      "type": "list",
+      "visibility": false,
+      "styles": [
+        "width_full",
+        {
+          "itemSeparator": [
+            {
+              "height": 5
+            }
+          ]
+        },
+        {
+          "listItem": [
+            {
+              "height": 200
+            }
+          ]
+        }
+      ],
+      "itemTemplate": {
+        "id": "listItemWrapper",
+        "type": "view",
+        "orientation": "horizontal",
+        "align": "left_center",
+        "styles": [
+          "padding_all_16"
+        ],
+        "elements": [
+          {
+            "id": "image",
+            "type": "image",
+            "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+          },
+          {
+            "id": "title",
+            "type": "label",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "flex": 1,
+                    "flexWrap": "wrap",
+                    "marginStart": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "large",
+      "type": "list",
+      "visibility": false,
+      "styles": [
+        "width_full"
+      ],
+      "itemTemplate": {
+        "id": "listItemWrapper",
+        "type": "view",
+        "orientation": "horizontal",
+        "align": "left_center",
+        "styles": [
+          "padding_all_16",
+          {
+            "listItem": [
+              {
+                "height": 100
+              }
+            ]
+          }
+        ],
+        "elements": [
+          {
+            "id": "image",
+            "type": "image",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "width": 40,
+                    "height": 40
+                  }
+                ]
+              }
+            ],
+            "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+          },
+          {
+            "id": "title",
+            "type": "label",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "flex": 1,
+                    "flexWrap": "wrap",
+                    "marginStart": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "virtualizationOff",
+      "type": "list",
+      "visibility": false,
+      "disableVirtualization": "true",
+      "styles": [
+        "width_full"
+      ],
+      "itemTemplate": {
+        "id": "listItemWrapper",
+        "type": "view",
+        "orientation": "horizontal",
+        "align": "left_center",
+        "styles": [
+          "padding_all_16",
+          {
+            "listItem": [
+              {
+                "height": 100
+              }
+            ]
+          }
+        ],
+        "elements": [
+          {
+            "id": "image",
+            "type": "image",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "width": 40,
+                    "height": 40
+                  }
+                ]
+              }
+            ],
+            "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+          },
+          {
+            "id": "title",
+            "type": "label",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "flex": 1,
+                    "flexWrap": "wrap",
+                    "marginStart": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
     }
   ]
 }

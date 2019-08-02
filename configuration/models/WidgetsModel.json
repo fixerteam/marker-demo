@@ -1,7 +1,7 @@
 {
   "name": "WidgetsModel",
   "fields": {
-    "id": "integer",
+    "id": "string",
     "name": "string",
     "screen": "string",
     "compatibility": {
