@@ -281,14 +281,7 @@
         "orientation": "horizontal",
         "align": "left_center",
         "styles": [
-          "padding_all_16",
-          {
-            "listItem": [
-              {
-                "height": 100
-              }
-            ]
-          }
+          "padding_all_16"
         ],
         "elements": [
           {
@@ -338,14 +331,7 @@
         "orientation": "horizontal",
         "align": "left_center",
         "styles": [
-          "padding_all_16",
-          {
-            "listItem": [
-              {
-                "height": 100
-              }
-            ]
-          }
+          "padding_all_16"
         ],
         "elements": [
           {
@@ -380,6 +366,697 @@
           }
         ]
       }
+    },
+    {
+      "id": "columns",
+      "type": "list",
+      "visibility": false,
+      "styles": [
+        "width_full"
+      ],
+      "columns": 2,
+      "data": [
+        {
+          "id": "Acura",
+          "value": "Acura"
+        },
+        {
+          "id": "Alfa Romeo",
+          "value": "Alfa Romeo"
+        },
+        {
+          "id": "Audi",
+          "value": "Audi"
+        },
+        {
+          "id": "BMW",
+          "value": "BMW"
+        },
+        {
+          "id": "BYD",
+          "value": "BYD"
+        },
+        {
+          "id": "Bentley",
+          "value": "Bentley"
+        },
+        {
+          "id": "Brilliance",
+          "value": "Brilliance"
+        },
+        {
+          "id": "Cadillac",
+          "value": "Cadillac"
+        },
+        {
+          "id": "ChangFeng",
+          "value": "ChangFeng"
+        },
+        {
+          "id": "Changan",
+          "value": "Changan"
+        },
+        {
+          "id": "Chery",
+          "value": "Chery"
+        },
+        {
+          "id": "Chevrolet",
+          "value": "Chevrolet"
+        },
+        {
+          "id": "Chrysler",
+          "value": "Chrysler"
+        },
+        {
+          "id": "Citroen",
+          "value": "Citroen"
+        },
+        {
+          "id": "DW Hower",
+          "value": "DW Hower"
+        },
+        {
+          "id": "Dacia",
+          "value": "Dacia"
+        },
+        {
+          "id": "Daewoo",
+          "value": "Daewoo"
+        },
+        {
+          "id": "Daihatsu",
+          "value": "Daihatsu"
+        },
+        {
+          "id": "Datsun",
+          "value": "Datsun"
+        },
+        {
+          "id": "Derways",
+          "value": "Derways"
+        },
+        {
+          "id": "Dodge",
+          "value": "Dodge"
+        },
+        {
+          "id": "DongFeng",
+          "value": "DongFeng"
+        },
+        {
+          "id": "FAW",
+          "value": "FAW"
+        },
+        {
+          "id": "Ferrari",
+          "value": "Ferrari"
+        },
+        {
+          "id": "Fiat",
+          "value": "Fiat"
+        },
+        {
+          "id": "Ford",
+          "value": "Ford"
+        },
+        {
+          "id": "Foton",
+          "value": "Foton"
+        },
+        {
+          "id": "Geely",
+          "value": "Geely"
+        },
+        {
+          "id": "Genesis",
+          "value": "Genesis"
+        },
+        {
+          "id": "Great Wall",
+          "value": "Great Wall"
+        },
+        {
+          "id": "Haima",
+          "value": "Haima"
+        },
+        {
+          "id": "Haval",
+          "value": "Haval"
+        },
+        {
+          "id": "Hawtai",
+          "value": "Hawtai"
+        },
+        {
+          "id": "Honda",
+          "value": "Honda"
+        },
+        {
+          "id": "Hyundai",
+          "value": "Hyundai"
+        },
+        {
+          "id": "Infiniti",
+          "value": "Infiniti"
+        },
+        {
+          "id": "Isuzu",
+          "value": "Isuzu"
+        },
+        {
+          "id": "JAC",
+          "value": "JAC"
+        }
+      ]
+    },
+    {
+      "id": "separatedColumns",
+      "type": "list",
+      "visibility": false,
+      "styles": [
+        "width_full",
+        "list_separator_1",
+        {
+          "columnSeparator": [
+            {
+              "width": 1,
+              "marginVertical": 16
+            }
+          ],
+          "listItem": [
+            {
+              "height": 200
+            }
+          ]
+        }
+      ],
+      "columns": 3,
+      "itemTemplate": {
+        "id": "listItemWrapper",
+        "type": "view",
+        "align": "center_top",
+        "styles": [
+          "padding_all_16"
+        ],
+        "elements": [
+          {
+            "id": "image",
+            "type": "image",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "width": 40,
+                    "height": 40
+                  }
+                ]
+              }
+            ],
+            "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+          },
+          {
+            "id": "title",
+            "type": "label"
+          }
+        ]
+      }
+    },
+    {
+      "type": "view",
+      "id": "horizontalLists",
+      "visibility": false,
+      "align": "center_top",
+      "scrollable": true,
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "type": "label",
+          "value": "JSON data",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "h_default",
+          "type": "list",
+          "orientation": "horizontal",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "100%",
+                  "height": 56
+                }
+              ],
+              "listItem": [
+                {
+                  "width": 200
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "Acura",
+              "value": "Acura"
+            },
+            {
+              "id": "Alfa Romeo",
+              "value": "Alfa Romeo"
+            },
+            {
+              "id": "Audi",
+              "value": "Audi"
+            },
+            {
+              "id": "BMW",
+              "value": "BMW"
+            },
+            {
+              "id": "BYD",
+              "value": "BYD"
+            },
+            {
+              "id": "Bentley",
+              "value": "Bentley"
+            },
+            {
+              "id": "Brilliance",
+              "value": "Brilliance"
+            },
+            {
+              "id": "Cadillac",
+              "value": "Cadillac"
+            },
+            {
+              "id": "ChangFeng",
+              "value": "ChangFeng"
+            },
+            {
+              "id": "Changan",
+              "value": "Changan"
+            },
+            {
+              "id": "Chery",
+              "value": "Chery"
+            },
+            {
+              "id": "Chevrolet",
+              "value": "Chevrolet"
+            },
+            {
+              "id": "Chrysler",
+              "value": "Chrysler"
+            },
+            {
+              "id": "Citroen",
+              "value": "Citroen"
+            },
+            {
+              "id": "DW Hower",
+              "value": "DW Hower"
+            },
+            {
+              "id": "Dacia",
+              "value": "Dacia"
+            },
+            {
+              "id": "Daewoo",
+              "value": "Daewoo"
+            },
+            {
+              "id": "Daihatsu",
+              "value": "Daihatsu"
+            },
+            {
+              "id": "Datsun",
+              "value": "Datsun"
+            },
+            {
+              "id": "Derways",
+              "value": "Derways"
+            },
+            {
+              "id": "Dodge",
+              "value": "Dodge"
+            },
+            {
+              "id": "DongFeng",
+              "value": "DongFeng"
+            },
+            {
+              "id": "FAW",
+              "value": "FAW"
+            },
+            {
+              "id": "Ferrari",
+              "value": "Ferrari"
+            },
+            {
+              "id": "Fiat",
+              "value": "Fiat"
+            },
+            {
+              "id": "Ford",
+              "value": "Ford"
+            },
+            {
+              "id": "Foton",
+              "value": "Foton"
+            },
+            {
+              "id": "Geely",
+              "value": "Geely"
+            },
+            {
+              "id": "Genesis",
+              "value": "Genesis"
+            },
+            {
+              "id": "Great Wall",
+              "value": "Great Wall"
+            },
+            {
+              "id": "Haima",
+              "value": "Haima"
+            },
+            {
+              "id": "Haval",
+              "value": "Haval"
+            },
+            {
+              "id": "Hawtai",
+              "value": "Hawtai"
+            },
+            {
+              "id": "Honda",
+              "value": "Honda"
+            },
+            {
+              "id": "Hyundai",
+              "value": "Hyundai"
+            },
+            {
+              "id": "Infiniti",
+              "value": "Infiniti"
+            },
+            {
+              "id": "Isuzu",
+              "value": "Isuzu"
+            },
+            {
+              "id": "JAC",
+              "value": "JAC"
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "JSON data with separator",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "h_refreshable",
+          "type": "list",
+          "orientation": "horizontal",
+          "styles": [
+            {
+              "self": [
+                {
+                  "width": "100%",
+                  "height": 56
+                }
+              ],
+              "listItem": [
+                {
+                  "width": 200
+                }
+              ],
+              "columnSeparator": [
+                {
+                  "width": 1
+                }
+              ]
+            }
+          ],
+          "data": [
+            {
+              "id": "0",
+              "value": "Audi"
+            },
+            {
+              "id": "1",
+              "value": "Bmw"
+            },
+            {
+              "id": "2",
+              "value": "Citroen"
+            },
+            {
+              "id": "3",
+              "value": "Dodge"
+            },
+            {
+              "id": "4",
+              "value": "Honda"
+            },
+            {
+              "id": "5",
+              "value": "Lexus"
+            },
+            {
+              "id": "6",
+              "value": "Nissan"
+            },
+            {
+              "id": "7",
+              "value": "Porsche"
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "Custom template with paging",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "h_paging",
+          "type": "list",
+          "orientation": "horizontal",
+          "styles": [
+            {
+              "self": [
+                {
+                  "height": 100
+                }
+              ],
+              "listItem": [
+                {
+                  "width": 200,
+                  "height": 100
+                }
+              ],
+              "columnSeparator": [
+                {
+                  "width": 1,
+                  "marginVertical": 16
+                }
+              ]
+            }
+          ],
+          "itemTemplate": {
+            "id": "listItemWrapper",
+            "type": "view",
+            "orientation": "horizontal",
+            "align": "left_center",
+            "styles": [
+              "padding_all_16"
+            ],
+            "elements": [
+              {
+                "id": "image",
+                "type": "image",
+                "styles": [
+                  {
+                    "self": [
+                      {
+                        "width": 40,
+                        "height": 40
+                      }
+                    ]
+                  }
+                ],
+                "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+              },
+              {
+                "id": "title",
+                "type": "label",
+                "styles": [
+                  {
+                    "self": [
+                      {
+                        "flex": 1,
+                        "flexWrap": "wrap",
+                        "marginStart": 16
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "label",
+          "value": "Large list with paging",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "h_large",
+          "type": "list",
+          "orientation": "horizontal",
+          "styles": [
+            {
+              "self": [
+                {
+                  "height": 100
+                }
+              ],
+              "listItem": [
+                {
+                  "width": 200,
+                  "height": 100
+                }
+              ],
+              "columnSeparator": [
+                {
+                  "width": 5,
+                  "marginVertical": 16
+                }
+              ]
+            }
+          ],
+          "itemTemplate": {
+            "id": "listItemWrapper",
+            "type": "view",
+            "orientation": "horizontal",
+            "align": "left_center",
+            "styles": [
+              "padding_all_16"
+            ],
+            "elements": [
+              {
+                "id": "image",
+                "type": "image",
+                "styles": [
+                  {
+                    "self": [
+                      {
+                        "width": 40,
+                        "height": 40
+                      }
+                    ]
+                  }
+                ],
+                "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+              },
+              {
+                "id": "title",
+                "type": "label",
+                "styles": [
+                  {
+                    "self": [
+                      {
+                        "flex": 1,
+                        "flexWrap": "wrap",
+                        "marginStart": 16
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "type": "label",
+          "value": "Large list without virtualization",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "h_virtualizationOff",
+          "type": "list",
+          "disableVirtualization": "true",
+          "orientation": "horizontal",
+          "styles": [
+            {
+              "self": [
+                {
+                  "height": 100
+                }
+              ],
+              "listItem": [
+                {
+                  "width": 200,
+                  "height": 100
+                }
+              ]
+            }
+          ],
+          "itemTemplate": {
+            "id": "listItemWrapper",
+            "type": "view",
+            "orientation": "horizontal",
+            "align": "left_center",
+            "styles": [
+              "padding_all_16"
+            ],
+            "elements": [
+              {
+                "id": "image",
+                "type": "image",
+                "styles": [
+                  {
+                    "self": [
+                      {
+                        "width": 40,
+                        "height": 40
+                      }
+                    ]
+                  }
+                ],
+                "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+              },
+              {
+                "id": "title",
+                "type": "label",
+                "styles": [
+                  {
+                    "self": [
+                      {
+                        "flex": 1,
+                        "flexWrap": "wrap",
+                        "marginStart": 16
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }

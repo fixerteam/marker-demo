@@ -1,3 +1,5 @@
+const HORIZONTAL_LIST_IDS = ['h_refreshable', 'h_paging', 'h_large', 'h_virtualizationOff']
+
 class DefaultList {
   onCreate({ view, navigator, model, randomGenerator }, { id, title }) {
     this.view = view
@@ -6,7 +8,12 @@ class DefaultList {
     this.randomGenerator = randomGenerator
 
     this.bindAppbar(title)
-    this.bindList(id)
+    if (id === 'horizontal') {
+      this.view.getComponent('horizontalLists').setAttrs({ visibility: true })
+      HORIZONTAL_LIST_IDS.forEach(list => this.bindList(list))
+    } else {
+      this.bindList(id)
+    }
   }
 
   bindAppbar(title) {
@@ -19,23 +26,33 @@ class DefaultList {
     const list = this.view.getComponent(id)
     list.setAttrs({ visibility: true })
     switch (id) {
+      case 'h_refreshable':
       case 'refreshable': {
         this.setListRefresh(list)
         break
       }
+      case 'h_paging':
       case 'paging': {
         this.setListData(list)
         this.setListRefresh(list)
         this.setListPaging(list, 10)
         break
       }
+      case 'h_large':
       case 'large': {
         this.setListData(list)
         this.setListRefresh(list)
         this.setListPaging(list, 50)
         break
       }
+      case 'h_virtualizationOff':
       case 'virtualizationOff': {
+        this.setListData(list)
+        this.setListRefresh(list)
+        this.setListPaging(list, 50)
+        break
+      }
+      case 'separatedColumns': {
         this.setListData(list)
         this.setListRefresh(list)
         this.setListPaging(list, 50)

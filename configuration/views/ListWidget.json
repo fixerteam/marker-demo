@@ -82,16 +82,16 @@
             {
               "id": "horizontal",
               "title": "Horizontal lists",
-              "value": "HorizontalList"
+              "value": "DefaultList"
             },
             {
               "id": "columns",
-              "title": "Default list with columns",
+              "title": "Default list with 2 columns",
               "value": "DefaultList"
             },
             {
               "id": "separatedColumns",
-              "title": "List with custom template, separated, columns",
+              "title": "List with custom template, separated, 3 columns",
               "value": "DefaultList"
             }
           ]
