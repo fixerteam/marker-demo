@@ -1,0 +1,522 @@
+{
+  "name": "DefaultSectionList",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "id": "default",
+      "type": "sectionlist",
+      "visibility": false,
+      "styles": [
+        "width_full"
+      ],
+      "data": [
+        {
+          "id": "A",
+          "title": "Start with A",
+          "data": [
+            {
+              "id": "Acura",
+              "value": "Acura"
+            },
+            {
+              "id": "Alfa Romeo",
+              "value": "Alfa Romeo"
+            },
+            {
+              "id": "Audi",
+              "value": "Audi"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Start with B",
+          "data": [
+            {
+              "id": "BMW",
+              "value": "BMW"
+            },
+            {
+              "id": "BYD",
+              "value": "BYD"
+            },
+            {
+              "id": "Bentley",
+              "value": "Bentley"
+            },
+            {
+              "id": "Brilliance",
+              "value": "Brilliance"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "title": "Start with C",
+          "data": [
+            {
+              "id": "Cadillac",
+              "value": "Cadillac"
+            },
+            {
+              "id": "ChangFeng",
+              "value": "ChangFeng"
+            },
+            {
+              "id": "Changan",
+              "value": "Changan"
+            },
+            {
+              "id": "Chery",
+              "value": "Chery"
+            },
+            {
+              "id": "Chevrolet",
+              "value": "Chevrolet"
+            },
+            {
+              "id": "Chrysler",
+              "value": "Chrysler"
+            },
+            {
+              "id": "Citroen",
+              "value": "Citroen"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "title": "Start with D",
+          "data": [
+            {
+              "id": "DW Hower",
+              "value": "DW Hower"
+            },
+            {
+              "id": "Dacia",
+              "value": "Dacia"
+            },
+            {
+              "id": "Daewoo",
+              "value": "Daewoo"
+            },
+            {
+              "id": "Daihatsu",
+              "value": "Daihatsu"
+            },
+            {
+              "id": "Datsun",
+              "value": "Datsun"
+            },
+            {
+              "id": "Derways",
+              "value": "Derways"
+            },
+            {
+              "id": "Dodge",
+              "value": "Dodge"
+            },
+            {
+              "id": "DongFeng",
+              "value": "DongFeng"
+            }
+          ]
+        },
+        {
+          "id": "F",
+          "title": "Start with F",
+          "data": [
+            {
+              "id": "FAW",
+              "value": "FAW"
+            },
+            {
+              "id": "Ferrari",
+              "value": "Ferrari"
+            },
+            {
+              "id": "Fiat",
+              "value": "Fiat"
+            },
+            {
+              "id": "Ford",
+              "value": "Ford"
+            },
+            {
+              "id": "Foton",
+              "value": "Foton"
+            }
+          ]
+        },
+        {
+          "id": "G",
+          "title": "Start with G",
+          "data": [
+            {
+              "id": "Geely",
+              "value": "Geely"
+            },
+            {
+              "id": "Genesis",
+              "value": "Genesis"
+            },
+            {
+              "id": "Great Wall",
+              "value": "Great Wall"
+            }
+          ]
+        },
+        {
+          "id": "H",
+          "title": "Start with H",
+          "data": [
+            {
+              "id": "Haima",
+              "value": "Haima"
+            },
+            {
+              "id": "Haval",
+              "value": "Haval"
+            },
+            {
+              "id": "Hawtai",
+              "value": "Hawtai"
+            },
+            {
+              "id": "Honda",
+              "value": "Honda"
+            },
+            {
+              "id": "Hyundai",
+              "value": "Hyundai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "refreshable",
+      "type": "sectionlist",
+      "visibility": false,
+      "stickyHeaders": true,
+      "styles": [
+        "width_full",
+        "list_separator_1",
+        {
+          "listHeader": [
+            {
+              "width": "100%",
+              "backgroundColor": "#CFD8DC"
+            }
+          ],
+          "listHeaderTitle": [
+            {
+              "color": "#fff"
+            }
+          ]
+        }
+      ],
+      "data": [
+        {
+          "id": "A",
+          "title": "Start with A",
+          "data": [
+            {
+              "id": "Acura",
+              "value": "Acura"
+            },
+            {
+              "id": "Alfa Romeo",
+              "value": "Alfa Romeo"
+            },
+            {
+              "id": "Audi",
+              "value": "Audi"
+            }
+          ]
+        },
+        {
+          "id": "B",
+          "title": "Start with B",
+          "data": [
+            {
+              "id": "BMW",
+              "value": "BMW"
+            },
+            {
+              "id": "BYD",
+              "value": "BYD"
+            },
+            {
+              "id": "Bentley",
+              "value": "Bentley"
+            },
+            {
+              "id": "Brilliance",
+              "value": "Brilliance"
+            }
+          ]
+        },
+        {
+          "id": "C",
+          "title": "Start with C",
+          "data": [
+            {
+              "id": "Cadillac",
+              "value": "Cadillac"
+            },
+            {
+              "id": "ChangFeng",
+              "value": "ChangFeng"
+            },
+            {
+              "id": "Changan",
+              "value": "Changan"
+            },
+            {
+              "id": "Chery",
+              "value": "Chery"
+            },
+            {
+              "id": "Chevrolet",
+              "value": "Chevrolet"
+            },
+            {
+              "id": "Chrysler",
+              "value": "Chrysler"
+            },
+            {
+              "id": "Citroen",
+              "value": "Citroen"
+            }
+          ]
+        },
+        {
+          "id": "D",
+          "title": "Start with D",
+          "data": [
+            {
+              "id": "DW Hower",
+              "value": "DW Hower"
+            },
+            {
+              "id": "Dacia",
+              "value": "Dacia"
+            },
+            {
+              "id": "Daewoo",
+              "value": "Daewoo"
+            },
+            {
+              "id": "Daihatsu",
+              "value": "Daihatsu"
+            },
+            {
+              "id": "Datsun",
+              "value": "Datsun"
+            },
+            {
+              "id": "Derways",
+              "value": "Derways"
+            },
+            {
+              "id": "Dodge",
+              "value": "Dodge"
+            },
+            {
+              "id": "DongFeng",
+              "value": "DongFeng"
+            }
+          ]
+        },
+        {
+          "id": "F",
+          "title": "Start with F",
+          "data": [
+            {
+              "id": "FAW",
+              "value": "FAW"
+            },
+            {
+              "id": "Ferrari",
+              "value": "Ferrari"
+            },
+            {
+              "id": "Fiat",
+              "value": "Fiat"
+            },
+            {
+              "id": "Ford",
+              "value": "Ford"
+            },
+            {
+              "id": "Foton",
+              "value": "Foton"
+            }
+          ]
+        },
+        {
+          "id": "G",
+          "title": "Start with G",
+          "data": [
+            {
+              "id": "Geely",
+              "value": "Geely"
+            },
+            {
+              "id": "Genesis",
+              "value": "Genesis"
+            },
+            {
+              "id": "Great Wall",
+              "value": "Great Wall"
+            }
+          ]
+        },
+        {
+          "id": "H",
+          "title": "Start with H",
+          "data": [
+            {
+              "id": "Haima",
+              "value": "Haima"
+            },
+            {
+              "id": "Haval",
+              "value": "Haval"
+            },
+            {
+              "id": "Hawtai",
+              "value": "Hawtai"
+            },
+            {
+              "id": "Honda",
+              "value": "Honda"
+            },
+            {
+              "id": "Hyundai",
+              "value": "Hyundai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paging",
+      "type": "sectionlist",
+      "visibility": false,
+      "styles": [
+        "width_full",
+        {
+          "itemSeparator": [
+            {
+              "height": 5
+            }
+          ],
+          "listItem": [
+            {
+              "height": 200
+            }
+          ]
+        }
+      ],
+      "itemTemplate": {
+        "id": "listItemWrapper",
+        "type": "view",
+        "orientation": "horizontal",
+        "align": "left_center",
+        "styles": [
+          "padding_all_16"
+        ],
+        "elements": [
+          {
+            "id": "image",
+            "type": "image",
+            "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+          },
+          {
+            "id": "title",
+            "type": "label",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "flex": 1,
+                    "flexWrap": "wrap",
+                    "marginStart": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "large",
+      "type": "sectionlist",
+      "visibility": false,
+      "styles": [
+        "width_full",
+        {
+          "listHeader": [
+            {
+              "height": 72,
+              "backgroundColor": "#FF1122"
+            }
+          ]
+        }
+      ],
+      "headerTemplate": "SectionHeader",
+      "itemTemplate": {
+        "id": "listItemWrapper",
+        "type": "view",
+        "orientation": "horizontal",
+        "align": "left_center",
+        "styles": [
+          "padding_all_16"
+        ],
+        "elements": [
+          {
+            "id": "image",
+            "type": "image",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "width": 40,
+                    "height": 40
+                  }
+                ]
+              }
+            ],
+            "value": "https://pp.userapi.com/c840127/v840127031/77711/P0DWqdHuAJc.jpg"
+          },
+          {
+            "id": "title",
+            "type": "label",
+            "styles": [
+              {
+                "self": [
+                  {
+                    "flex": 1,
+                    "flexWrap": "wrap",
+                    "marginStart": 16
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

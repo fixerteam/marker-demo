@@ -1,0 +1,195 @@
+{
+  "name": "AutoModelSection",
+  "fields": {
+    "id": "string",
+    "title": "string",
+    "data": "array"
+  },
+  "storageType": "const",
+  "source": {
+    "values": [
+      {
+        "id": "A",
+        "title": "Start with A",
+        "data": [
+          {
+            "id": "Acura",
+            "value": "Acura"
+          },
+          {
+            "id": "Alfa Romeo",
+            "value": "Alfa Romeo"
+          },
+          {
+            "id": "Audi",
+            "value": "Audi"
+          }
+        ]
+      },
+      {
+        "id": "B",
+        "title": "Start with B",
+        "data": [
+          {
+            "id": "BMW",
+            "value": "BMW"
+          },
+          {
+            "id": "BYD",
+            "value": "BYD"
+          },
+          {
+            "id": "Bentley",
+            "value": "Bentley"
+          },
+          {
+            "id": "Brilliance",
+            "value": "Brilliance"
+          }
+        ]
+      },
+      {
+        "id": "C",
+        "title": "Start with C",
+        "data": [
+          {
+            "id": "Cadillac",
+            "value": "Cadillac"
+          },
+          {
+            "id": "ChangFeng",
+            "value": "ChangFeng"
+          },
+          {
+            "id": "Changan",
+            "value": "Changan"
+          },
+          {
+            "id": "Chery",
+            "value": "Chery"
+          },
+          {
+            "id": "Chevrolet",
+            "value": "Chevrolet"
+          },
+          {
+            "id": "Chrysler",
+            "value": "Chrysler"
+          },
+          {
+            "id": "Citroen",
+            "value": "Citroen"
+          }
+        ]
+      },
+      {
+        "id": "D",
+        "title": "Start with D",
+        "data": [
+          {
+            "id": "DW Hower",
+            "value": "DW Hower"
+          },
+          {
+            "id": "Dacia",
+            "value": "Dacia"
+          },
+          {
+            "id": "Daewoo",
+            "value": "Daewoo"
+          },
+          {
+            "id": "Daihatsu",
+            "value": "Daihatsu"
+          },
+          {
+            "id": "Datsun",
+            "value": "Datsun"
+          },
+          {
+            "id": "Derways",
+            "value": "Derways"
+          },
+          {
+            "id": "Dodge",
+            "value": "Dodge"
+          },
+          {
+            "id": "DongFeng",
+            "value": "DongFeng"
+          }
+        ]
+      },
+      {
+        "id": "F",
+        "title": "Start with F",
+        "data": [
+          {
+            "id": "FAW",
+            "value": "FAW"
+          },
+          {
+            "id": "Ferrari",
+            "value": "Ferrari"
+          },
+          {
+            "id": "Fiat",
+            "value": "Fiat"
+          },
+          {
+            "id": "Ford",
+            "value": "Ford"
+          },
+          {
+            "id": "Foton",
+            "value": "Foton"
+          }
+        ]
+      },
+      {
+        "id": "G",
+        "title": "Start with G",
+        "data": [
+          {
+            "id": "Geely",
+            "value": "Geely"
+          },
+          {
+            "id": "Genesis",
+            "value": "Genesis"
+          },
+          {
+            "id": "Great Wall",
+            "value": "Great Wall"
+          }
+        ]
+      },
+      {
+        "id": "H",
+        "title": "Start with H",
+        "data": [
+          {
+            "id": "Haima",
+            "value": "Haima"
+          },
+          {
+            "id": "Haval",
+            "value": "Haval"
+          },
+          {
+            "id": "Hawtai",
+            "value": "Hawtai"
+          },
+          {
+            "id": "Honda",
+            "value": "Honda"
+          },
+          {
+            "id": "Hyundai",
+            "value": "Hyundai"
+          }
+        ]
+      }
+    ]
+  }
+}

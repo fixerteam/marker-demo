@@ -1,0 +1,21 @@
+{
+  "name": "SectionHeader",
+  "type": "view",
+  "elements": [
+    {
+      "type": "label",
+      "id": "title",
+      "styles": [
+        {
+          "self": [
+            {
+              "fontSize": 18,
+              "color": "#fff",
+              "marginHorizontal": 16
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

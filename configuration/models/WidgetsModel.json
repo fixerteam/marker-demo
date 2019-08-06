@@ -117,6 +117,15 @@
           "android": true
         },
         "id": "radioGroupWidget"
+      },
+      {
+        "name": "SectionList",
+        "screen": "SectionListWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true
+        },
+        "id": "sectionListWidget"
       }
     ]
   }

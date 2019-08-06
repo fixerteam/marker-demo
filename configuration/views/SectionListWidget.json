@@ -1,0 +1,82 @@
+{
+  "name": "SectionListWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "view",
+      "orientation": "vertical",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{sectionListDescription}"
+        },
+        {
+          "type": "list",
+          "id": "menuList",
+          "styles": [
+            "width_full",
+            {
+              "listItem": [
+                {
+                  "height": 54,
+                  "justifyContent": "center"
+                }
+              ],
+              "itemSeparator": [
+                {
+                  "height": 1,
+                  "marginHorizontal": 16
+                }
+              ]
+            }
+          ],
+          "itemTemplate": "WidgetListItem",
+          "data": [
+            {
+              "id": "default",
+              "title": "Default list, json data",
+              "value": "DefaultSectionList"
+            },
+            {
+              "id": "refreshable",
+              "title": "List with onRefresh, separated, stickyHeaders",
+              "value": "DefaultSectionList"
+            },
+            {
+              "id": "paging",
+              "title": "List with paging, custom template, separated",
+              "value": "DefaultSectionList"
+            },
+            {
+              "id": "large",
+              "title": "Large list with paging, custom template",
+              "value": "DefaultSectionList"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
