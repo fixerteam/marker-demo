@@ -1,0 +1,421 @@
+{
+  "name": "InputWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "view",
+      "orientation": "vertical",
+      "scrollable": true,
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{inputDescription}"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            "space_between",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "checkbox",
+                  "id": "visibilityCheckbox",
+                  "title": "visibility",
+                  "value": true
+                },
+                {
+                  "type": "checkbox",
+                  "id": "isReadOnlyCheckbox",
+                  "title": "readonly"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "isErrorCheckbox",
+                  "title": "error"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "valueCheckbox",
+                  "title": "value"
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "title"
+                },
+                {
+                  "id": "titleRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "title": "short",
+                      "value": "title"
+                    },
+                    {
+                      "id": "1",
+                      "title": "long",
+                      "value": "very very very long title for input"
+                    },
+                    {
+                      "id": "2",
+                      "title": "none"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "inputType"
+                },
+                {
+                  "id": "inputTypeRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "numeric"
+                    },
+                    {
+                      "id": "1",
+                      "value": "text"
+                    },
+                    {
+                      "id": "2",
+                      "value": "password"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "type": "label",
+                  "value": "returnKeyType"
+                },
+                {
+                  "id": "returnKeyTypeRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "done"
+                    },
+                    {
+                      "id": "1",
+                      "value": "go"
+                    },
+                    {
+                      "id": "2",
+                      "value": "next"
+                    },
+                    {
+                      "id": "3",
+                      "value": "search"
+                    },
+                    {
+                      "id": "4",
+                      "value": "send"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "label",
+          "value": "isFloatingLabel: true, kind: flat",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "FF_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "FF_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "FF_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "FF_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "FF_input",
+          "type": "input"
+        },
+        {
+          "type": "label",
+          "value": "isFloatingLabel: false, kind: flat",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "F_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "F_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "F_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "F_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "F_input",
+          "type": "input",
+          "isFloatingTitle": false
+        },
+        {
+          "type": "label",
+          "value": "kind: flat, custom styles",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "FC_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "FC_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "FC_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "FC_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "FC_input",
+          "type": "input"
+        },
+        {
+          "type": "label",
+          "value": "isFloatingLabel: true, kind: outlined",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "FO_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "FO_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "FO_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "FO_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "FO_input",
+          "type": "input",
+          "kind": "outlined"
+        },
+        {
+          "type": "label",
+          "value": "isFloatingLabel: false, kind: outlined",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "O_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "O_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "O_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "O_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "O_input",
+          "type": "input",
+          "kind": "outlined",
+          "isFloatingTitle": false
+        },
+        {
+          "type": "label",
+          "value": "kind: outlined, custom styles",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "OC_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "OC_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "OC_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "OC_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "OC_input",
+          "type": "input",
+          "kind": "outlined"
+        }
+      ]
+    }
+  ]
+}

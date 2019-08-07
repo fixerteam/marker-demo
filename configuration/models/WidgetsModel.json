@@ -101,6 +101,16 @@
         "id": "imageWidget"
       },
       {
+        "name": "Input",
+        "screen": "InputWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true,
+          "web": true
+        },
+        "id": "inputWidget"
+      },
+      {
         "name": "List",
         "screen": "ListWidget",
         "compatibility": {
