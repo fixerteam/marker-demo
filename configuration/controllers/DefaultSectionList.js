@@ -1,9 +1,9 @@
 class DefaultSectionList {
-  onCreate({ view, navigator, model, randomGenerator }, { id, title }) {
+  onCreate({ view, navigator, model, fakeDataProvider }, { id, title }) {
     this.view = view
     this.navigator = navigator
     this.model = model
-    this.randomGenerator = randomGenerator
+    this.fakeDataProvider = fakeDataProvider
 
     this.bindAppbar(title)
     this.bindList(id)
@@ -64,26 +64,10 @@ class DefaultSectionList {
   }
 
   setListPaging(list, count) {
-    list.setOnEndReached(() => {
+    list.setOnEndReached(async () => {
       list.setRefreshState(true)
-      setTimeout(() => {
-        list.addData(this.generateSectionData(count))
-        list.setRefreshState(false)
-      }, 2000)
-    })
-  }
-
-  generateSectionData(count) {
-    return [...Array(count).keys()].map(() => {
-      const randomId = this.randomGenerator.randomId()
-      return { title: randomId, id: randomId, data: this.generateFakeData(5) }
-    })
-  }
-
-  generateFakeData(count) {
-    return [...Array(count).keys()].map(() => {
-      const randomId = this.randomGenerator.randomId()
-      return { value: randomId, id: randomId }
+      list.addData(await this.fakeDataProvider.loadGroupedData(count, 5))
+      list.setRefreshState(false)
     })
   }
 }
