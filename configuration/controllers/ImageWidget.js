@@ -1,3 +1,5 @@
+const IMAGE_IDS = ['coverImage', 'containImage', 'fillImage', 'clickableImage']
+
 class ImageWidget {
   onCreate({ view, navigator, notifier, translation }) {
     this.view = view
@@ -10,7 +12,6 @@ class ImageWidget {
     this.bindImages()
     this.bindVisibilityCheckbox()
     this.bindValueRadioGroup()
-    this.bindFitRadioGroup()
   }
 
   bindAppbar() {
@@ -25,38 +26,28 @@ class ImageWidget {
   }
 
   bindImages() {
-    this.simpleImage = this.view.getComponent('simpleImage')
-    this.clickableImage = this.view.getComponent('clickableImage')
-    this.clickableImage.onClick(() =>
-      this.notifier.alert({
-        title: this.translation.get('attributes'),
-        msg: JSON.stringify(this.clickableImage.getAttrs(), null, 2),
-        cancelable: true
-      })
-    )
+    this.images = IMAGE_IDS.map(id => {
+      const image = this.view.getComponent(id)
+      if (id === 'clickableImage') {
+        image.onClick(() =>
+          this.notifier.alert({
+            title: this.translation.get('attributes'),
+            msg: JSON.stringify(image.getAttrs(), null, 2),
+            cancelable: true
+          })
+        )
+      }
+      return image
+    })
   }
 
   bindVisibilityCheckbox() {
     const visibilityCheckbox = this.view.getComponent('visibilityCheckbox')
-    visibilityCheckbox.onChange(value => {
-      this.simpleImage.setAttrs({ visibility: value })
-      this.clickableImage.setAttrs({ visibility: value })
-    })
+    visibilityCheckbox.onChange(value => this.images.forEach(image => image.setAttrs({ visibility: value })))
   }
 
   bindValueRadioGroup() {
     const valueRadioGroup = this.view.getComponent('valueRadioGroup')
-    valueRadioGroup.onSelect(item => {
-      this.simpleImage.setImage(item.value)
-      this.clickableImage.setImage(item.value)
-    })
-  }
-
-  bindFitRadioGroup() {
-    const fitRadioGroup = this.view.getComponent('fitRadioGroup')
-    fitRadioGroup.onSelect(item => {
-      this.simpleImage.setFit(item.value)
-      this.clickableImage.setFit(item.value)
-    })
+    valueRadioGroup.onSelect(item => this.images.forEach(image => image.setImage(item.value)))
   }
 }

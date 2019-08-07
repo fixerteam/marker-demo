@@ -1,0 +1,15 @@
+{
+  "name": "image_style",
+  "type": "style",
+  "value": {
+    "self": [
+      {
+        "width": "90%",
+        "height": 200
+      }
+    ]
+  },
+  "template": "default",
+  "id": "5d0a1e087adf8407008b4574",
+  "uptime": 1560944179
+}

@@ -90,64 +90,66 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "view",
-              "elements": [
-                {
-                  "type": "label",
-                  "value": "fit"
-                },
-                {
-                  "id": "fitRadioGroup",
-                  "type": "radiogroup",
-                  "data": [
-                    {
-                      "id": "0",
-                      "value": "cover"
-                    },
-                    {
-                      "id": "1",
-                      "value": "contain"
-                    },
-                    {
-                      "id": "2",
-                      "value": "fill"
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
         {
-          "id": "simpleImage",
-          "type": "image",
+          "type": "label",
+          "value": "fit: cover",
           "styles": [
-            {
-              "self": [
-                {
-                  "width": "90%",
-                  "height": 300,
-                  "marginTop": 30
-                }
-              ]
-            }
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "coverImage",
+          "type": "image",
+          "fit": "cover",
+          "styles": [
+            "image_style"
+          ]
+        },
+        {
+          "type": "label",
+          "value": "fit: contain",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "containImage",
+          "type": "image",
+          "fit": "contain",
+          "styles": [
+            "image_style"
+          ]
+        },
+        {
+          "type": "label",
+          "value": "fit: fill",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "id": "fillImage",
+          "type": "image",
+          "fit": "fill",
+          "styles": [
+            "image_style"
+          ]
+        },
+        {
+          "type": "label",
+          "value": "clickable",
+          "styles": [
+            "margin_vertical_16"
           ]
         },
         {
           "id": "clickableImage",
           "type": "image",
           "styles": [
-            {
-              "self": [
-                {
-                  "width": "90%",
-                  "height": 300,
-                  "marginTop": 30
-                }
-              ]
-            }
+            "image_style"
           ]
         }
       ]
