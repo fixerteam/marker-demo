@@ -5,13 +5,7 @@
   "isFloatingTitle": false,
   "kind": "outlined",
   "styles": [
-    {
-      "self": [
-        {
-          "width": "80%"
-        }
-      ]
-    }
+    "default_input_style"
   ],
   "data": [
     {

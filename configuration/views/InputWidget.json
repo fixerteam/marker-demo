@@ -82,35 +82,6 @@
               "elements": [
                 {
                   "type": "label",
-                  "value": "title"
-                },
-                {
-                  "id": "titleRadioGroup",
-                  "type": "radiogroup",
-                  "data": [
-                    {
-                      "id": "0",
-                      "title": "short",
-                      "value": "title"
-                    },
-                    {
-                      "id": "1",
-                      "title": "long",
-                      "value": "very very very long title for input"
-                    },
-                    {
-                      "id": "2",
-                      "title": "none"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "view",
-              "elements": [
-                {
-                  "type": "label",
                   "value": "inputType"
                 },
                 {
@@ -208,7 +179,11 @@
         },
         {
           "id": "FF_input",
-          "type": "input"
+          "type": "input",
+          "title": "title",
+          "styles": [
+            "default_input_style"
+          ]
         },
         {
           "type": "label",
@@ -249,7 +224,11 @@
         {
           "id": "F_input",
           "type": "input",
-          "isFloatingTitle": false
+          "isFloatingTitle": false,
+          "title": "title",
+          "styles": [
+            "default_input_style"
+          ]
         },
         {
           "type": "label",
@@ -289,7 +268,17 @@
         },
         {
           "id": "FC_input",
-          "type": "input"
+          "type": "input",
+          "title": "title",
+          "styles": [
+            "default_input_style"
+          ],
+          "activeStyles": [
+            "default_input_active_style"
+          ],
+          "disabledStyles": [
+            "default_input_disabled_style"
+          ]
         },
         {
           "type": "label",
@@ -330,7 +319,11 @@
         {
           "id": "FO_input",
           "type": "input",
-          "kind": "outlined"
+          "kind": "outlined",
+          "title": "title",
+          "styles": [
+            "default_input_style"
+          ]
         },
         {
           "type": "label",
@@ -372,7 +365,11 @@
           "id": "O_input",
           "type": "input",
           "kind": "outlined",
-          "isFloatingTitle": false
+          "title": "title",
+          "isFloatingTitle": false,
+          "styles": [
+            "default_input_style"
+          ]
         },
         {
           "type": "label",
@@ -413,7 +410,17 @@
         {
           "id": "OC_input",
           "type": "input",
-          "kind": "outlined"
+          "kind": "outlined",
+          "title": "title",
+          "styles": [
+            "default_input_style"
+          ],
+          "activeStyles": [
+            "default_input_active_style"
+          ],
+          "disabledStyles": [
+            "default_input_disabled_style"
+          ]
         }
       ]
     }

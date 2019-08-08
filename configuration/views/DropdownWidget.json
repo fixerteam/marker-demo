@@ -168,10 +168,10 @@
           "isFloatingTitle": false,
           "kind": "flat",
           "styles": [
-            "dropdown_style"
+            "default_input_style"
           ],
           "activeStyles": [
-            "dropdown_active_style"
+            "default_input_active_style"
           ],
           "data": [
             {
@@ -234,13 +234,13 @@
           "title": "placeholder",
           "kind": "flat",
           "styles": [
-            "dropdown_style"
+            "default_input_style"
           ],
           "activeStyles": [
-            "dropdown_active_style"
+            "default_input_active_style"
           ],
           "disabledStyles": [
-            "dropdown_disabled_style"
+            "default_input_disabled_style"
           ],
           "data": [
             {
@@ -304,10 +304,10 @@
           "isFloatingTitle": false,
           "kind": "outlined",
           "styles": [
-            "dropdown_style"
+            "default_input_style"
           ],
           "activeStyles": [
-            "dropdown_active_style"
+            "default_input_active_style"
           ],
           "data": [
             {
@@ -370,13 +370,13 @@
           "title": "placeholder",
           "kind": "outlined",
           "styles": [
-            "dropdown_style"
+            "default_input_style"
           ],
           "activeStyles": [
-            "dropdown_active_style"
+            "default_input_active_style"
           ],
           "disabledStyles": [
-            "dropdown_disabled_style"
+            "default_input_disabled_style"
           ],
           "data": [
             {

@@ -5,13 +5,7 @@
   "kind": "outlined",
   "mode": "fixed",
   "styles": [
-    {
-      "self": [
-        {
-          "width": "80%"
-        }
-      ]
-    }
+    "default_input_style"
   ],
   "data": [
     {

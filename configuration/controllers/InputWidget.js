@@ -57,7 +57,6 @@ class InputWidget {
     this.bindVisibilityCheckbox()
     this.bindIsErrorCheckbox()
     this.bindValueCheckbox()
-    this.bindTitleRadioGroup()
     this.bindInputTypeRadioGroup()
     this.bindReturnKeyTypeRadioGroup()
     this.bindOnChangeCase()
@@ -140,17 +139,12 @@ class InputWidget {
     })
   }
 
-  bindTitleRadioGroup() {
-    const titleRadioGroup = this.view.getComponent('titleRadioGroup')
-    titleRadioGroup.onSelect(item => {
-      this.inputs.forEach(input => input.setAttrs({ title: item.value }))
-    })
-  }
-
   bindInputTypeRadioGroup() {
     const inputTypeRadioGroup = this.view.getComponent('inputTypeRadioGroup')
     inputTypeRadioGroup.onSelect(item => {
-      this.inputs.forEach(input => input.setAttrs({ inputType: item.value }))
+      this.inputs.forEach(input =>
+        input.setAttrs({ inputType: item.value, isRightIconEnabled: item.value === 'password' })
+      )
     })
   }
 

@@ -298,7 +298,7 @@
           "type": "datetime",
           "displayType": "date",
           "styles": [
-            "dropdown_style",
+            "default_input_style",
             "margin_vertical_16"
           ]
         },
@@ -334,7 +334,7 @@
           "displayType": "time",
           "isFloatingTitle": false,
           "styles": [
-            "dropdown_style",
+            "default_input_style",
             "margin_vertical_16"
           ]
         },
@@ -369,14 +369,14 @@
           "type": "datetime",
           "displayType": "datetime",
           "styles": [
-            "dropdown_style",
+            "default_input_style",
             "margin_vertical_16"
           ],
           "activeStyles": [
-            "dropdown_active_style"
+            "default_input_active_style"
           ],
           "disabledStyles": [
-            "dropdown_disabled_style"
+            "default_input_disabled_style"
           ]
         },
         {
@@ -411,7 +411,7 @@
           "displayTime": "date",
           "kind": "outlined",
           "styles": [
-            "dropdown_style",
+            "default_input_style",
             "margin_vertical_16"
           ]
         },
@@ -448,7 +448,7 @@
           "kind": "outlined",
           "isFloatingTitle": false,
           "styles": [
-            "dropdown_style",
+            "default_input_style",
             "margin_vertical_16"
           ]
         },
@@ -484,14 +484,14 @@
           "displayType": "date",
           "kind": "outlined",
           "styles": [
-            "dropdown_style",
+            "default_input_style",
             "margin_vertical_16"
           ],
           "activeStyles": [
-            "dropdown_active_style"
+            "default_input_active_style"
           ],
           "disabledStyles": [
-            "dropdown_disabled_style"
+            "default_input_disabled_style"
           ]
         }
       ]
