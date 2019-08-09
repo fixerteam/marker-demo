@@ -107,14 +107,6 @@
               "align": "center_top",
               "elements": [
                 {
-                  "id": "setTitleButton",
-                  "type": "button",
-                  "title": "set title",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
-                },
-                {
                   "id": "setErrorButton",
                   "type": "button",
                   "title": "set error",

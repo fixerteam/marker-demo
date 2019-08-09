@@ -7,6 +7,12 @@
   "styles": [
     "default_input_style"
   ],
+  "activeStyles": [
+    "default_input_active_style"
+  ],
+  "disabledStyles": [
+    "default_input_disabled_style"
+  ],
   "data": [
     {
       "id": "0",

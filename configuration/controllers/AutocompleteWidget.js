@@ -74,7 +74,6 @@ class AutocompleteWidget {
     this.bindSetDataButton()
     this.bindSetValueButton()
     this.bindClearValueButton()
-    this.bindSetTitleButton()
     this.bindSetErrorButton()
     this.bindClearErrorButton()
     this.bindOnSelectCase()
@@ -160,13 +159,6 @@ class AutocompleteWidget {
     const clearValueButton = this.view.getComponent('clearValueButton')
     clearValueButton.onClick(() => {
       this.autocompletes.forEach(autocomplete => autocomplete.clearValue())
-    })
-  }
-
-  bindSetTitleButton() {
-    const setTitleButton = this.view.getComponent('setTitleButton')
-    setTitleButton.onClick(() => {
-      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ title: '{autocompletePlaceholder}' }))
     })
   }
 

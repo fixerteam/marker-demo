@@ -156,6 +156,6 @@ class InputWidget {
   }
 
   bindOnChangeCase() {
-    this.inputs[0].onChange({ func: text => this.notifier.snackbar({ msg: text }), debounce: 500 })
+    this.inputs[0].onChange(text => this.notifier.snackbar({ msg: text }))
   }
 }
