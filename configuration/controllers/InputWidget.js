@@ -60,6 +60,7 @@ class InputWidget {
     this.bindInputTypeRadioGroup()
     this.bindReturnKeyTypeRadioGroup()
     this.bindOnChangeCase()
+    this.bindLinesButton()
   }
 
   bindAppbar() {
@@ -156,6 +157,26 @@ class InputWidget {
   }
 
   bindOnChangeCase() {
-    this.inputs[0].onChange(text => this.notifier.snackbar({ msg: text }))
+    const firstInput = this.inputs[0]
+    firstInput.onChange(text => this.notifier.snackbar({ msg: text }))
+    firstInput.onSubmit(text => this.notifier.snackbar({ msg: text }))
+  }
+
+  bindLinesButton() {
+    const addLineButton = this.view.getComponent('addLineButton')
+    addLineButton.onClick(() => {
+      this.inputs.forEach(input => {
+        const { lines } = input.getAttrs()
+        input.setAttrs({ lines: lines + 1 })
+      })
+    })
+
+    const removeLineButton = this.view.getComponent('removeLineButton')
+    removeLineButton.onClick(() => {
+      this.inputs.forEach(input => {
+        const { lines } = input.getAttrs()
+        input.setAttrs({ lines: lines - 1 })
+      })
+    })
   }
 }

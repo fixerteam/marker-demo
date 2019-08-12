@@ -74,6 +74,18 @@
                   "type": "checkbox",
                   "id": "valueCheckbox",
                   "title": "value"
+                },
+                {
+                  "id": "addLineButton",
+                  "type": "button",
+                  "title": "+line",
+                  "kind": "text"
+                },
+                {
+                  "id": "removeLineButton",
+                  "type": "button",
+                  "title": "-line",
+                  "kind": "text"
                 }
               ]
             },
