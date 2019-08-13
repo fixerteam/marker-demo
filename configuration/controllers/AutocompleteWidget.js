@@ -3,23 +3,31 @@ const AUTOCOMPLETES = [
     autocompleteId: 'FlatPopoverWithoutFloatingTitleAutocomplete',
     expandButtonId: 'FPWFT_isSuggestionsOpenedButton',
     popupButtonId: 'FPWFT_popupButton',
-    attrsButtonId: 'FPWFT_getAttrsButton'
+    attrsButtonId: 'FPWFT_getAttrsButton',
+    focusButtonId: 'FPWFT_focusButton',
+    blurButtonId: 'FPWFT_blurButton'
   },
   {
     autocompleteId: 'FlatFixedWithFloatingTitleAutocomplete',
     popupButtonId: 'FFFT_popupButton',
-    attrsButtonId: 'FFFT_getAttrsButton'
+    attrsButtonId: 'FFFT_getAttrsButton',
+    focusButtonId: 'FFFT_focusButton',
+    blurButtonId: 'FFFT_blurButton'
   },
   {
     autocompleteId: 'OutlinedPopoverWithoutFloatingTitleAutocomplete',
     expandButtonId: 'OPWFT_isSuggestionsOpenedButton',
     popupButtonId: 'OPWFT_popupButton',
-    attrsButtonId: 'OPWFT_getAttrsButton'
+    attrsButtonId: 'OPWFT_getAttrsButton',
+    focusButtonId: 'OPWFT_focusButton',
+    blurButtonId: 'OPWFT_blurButton'
   },
   {
     autocompleteId: 'OutlinedFixedWithFloatingTitleAutocomplete',
     popupButtonId: 'OFFT_popupButton',
-    attrsButtonId: 'OFFT_getAttrsButton'
+    attrsButtonId: 'OFFT_getAttrsButton',
+    focusButtonId: 'OFFT_focusButton',
+    blurButtonId: 'OFFT_blurButton'
   }
 ]
 
@@ -72,10 +80,9 @@ class AutocompleteWidget {
     this.bindReadOnlyCheckbox()
     this.bindVisibilityCheckbox()
     this.bindSetDataButton()
-    this.bindSetValueButton()
-    this.bindClearValueButton()
-    this.bindSetErrorButton()
-    this.bindClearErrorButton()
+    this.bindIsErrorCheckbox()
+    this.bindValueCheckbox()
+    this.bindReturnKeyTypeRadioGroup()
     this.bindOnSelectCase()
     this.bindOnChangeCase()
   }
@@ -116,6 +123,12 @@ class AutocompleteWidget {
         })
       }
 
+      const focusButton = this.view.getComponent(block.focusButtonId)
+      focusButton.onClick(() => autocomplete.focus())
+
+      const blurButton = this.view.getComponent(block.blurButtonId)
+      blurButton.onClick(() => autocomplete.blur())
+
       return autocomplete
     })
   }
@@ -148,31 +161,36 @@ class AutocompleteWidget {
     })
   }
 
-  bindSetValueButton() {
-    const setValueButton = this.view.getComponent('setValueButton')
-    setValueButton.onClick(() => {
-      this.autocompletes.forEach(autocomplete => autocomplete.setValue('2'))
+  bindIsErrorCheckbox() {
+    const isErrorCheckbox = this.view.getComponent('isErrorCheckbox')
+    isErrorCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => {
+        if (value) {
+          autocomplete.setError('{autocompleteError}')
+        } else {
+          autocomplete.clearError()
+        }
+      })
     })
   }
 
-  bindClearValueButton() {
-    const clearValueButton = this.view.getComponent('clearValueButton')
-    clearValueButton.onClick(() => {
-      this.autocompletes.forEach(autocomplete => autocomplete.clearValue())
+  bindValueCheckbox() {
+    const valueCheckbox = this.view.getComponent('valueCheckbox')
+    valueCheckbox.onChange(value => {
+      this.autocompletes.forEach(autocomplete => {
+        if (value) {
+          autocomplete.setValue('2')
+        } else {
+          autocomplete.clearValue()
+        }
+      })
     })
   }
 
-  bindSetErrorButton() {
-    const setErrorButton = this.view.getComponent('setErrorButton')
-    setErrorButton.onClick(() => {
-      this.autocompletes.forEach(autocomplete => autocomplete.setError('{autocompleteError}'))
-    })
-  }
-
-  bindClearErrorButton() {
-    const clearErrorButton = this.view.getComponent('clearErrorButton')
-    clearErrorButton.onClick(() => {
-      this.autocompletes.forEach(autocomplete => autocomplete.clearError())
+  bindReturnKeyTypeRadioGroup() {
+    const returnKeyTypeRadioGroup = this.view.getComponent('returnKeyTypeRadioGroup')
+    returnKeyTypeRadioGroup.onSelect(item => {
+      this.autocompletes.forEach(autocomplete => autocomplete.setAttrs({ returnKeyType: item.value }))
     })
   }
 
@@ -181,6 +199,10 @@ class AutocompleteWidget {
   }
 
   bindOnChangeCase() {
-    this.autocompletes[0].onChange({ func: text => this.notifier.snackbar({ msg: text }), debounce: 500 })
+    const firstAutocomplete = this.autocompletes[0]
+    firstAutocomplete.onChange({ func: text => this.notifier.snackbar({ msg: text }), debounce: 500 })
+    firstAutocomplete.onSubmit(text => this.notifier.snackbar({ msg: text }))
+    firstAutocomplete.onFocus(() => this.notifier.snackbar({ msg: 'focused' }))
+    firstAutocomplete.onBlur(() => this.notifier.snackbar({ msg: 'blured' }))
   }
 }

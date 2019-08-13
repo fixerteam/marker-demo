@@ -160,6 +160,8 @@ class InputWidget {
     const firstInput = this.inputs[0]
     firstInput.onChange(text => this.notifier.snackbar({ msg: text }))
     firstInput.onSubmit(text => this.notifier.snackbar({ msg: text }))
+    firstInput.onFocus(() => this.notifier.snackbar({ msg: 'focused' }))
+    firstInput.onBlur(() => this.notifier.snackbar({ msg: 'blured' }))
   }
 
   bindLinesButton() {

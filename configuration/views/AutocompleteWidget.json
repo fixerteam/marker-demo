@@ -69,6 +69,16 @@
                   "type": "checkbox",
                   "id": "isLoadingCheckbox",
                   "title": "isLoading"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "isErrorCheckbox",
+                  "title": "error"
+                },
+                {
+                  "type": "checkbox",
+                  "id": "valueCheckbox",
+                  "title": "value"
                 }
               ]
             },
@@ -83,22 +93,6 @@
                   "styles": [
                     "margin_vertical_8"
                   ]
-                },
-                {
-                  "id": "setValueButton",
-                  "type": "button",
-                  "title": "set value",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
-                },
-                {
-                  "id": "clearValueButton",
-                  "type": "button",
-                  "title": "clear value",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
                 }
               ]
             },
@@ -107,19 +101,33 @@
               "align": "center_top",
               "elements": [
                 {
-                  "id": "setErrorButton",
-                  "type": "button",
-                  "title": "set error",
-                  "styles": [
-                    "margin_vertical_8"
-                  ]
+                  "type": "label",
+                  "value": "returnKeyType"
                 },
                 {
-                  "id": "clearErrorButton",
-                  "type": "button",
-                  "title": "clear error",
-                  "styles": [
-                    "margin_vertical_8"
+                  "id": "returnKeyTypeRadioGroup",
+                  "type": "radiogroup",
+                  "data": [
+                    {
+                      "id": "0",
+                      "value": "done"
+                    },
+                    {
+                      "id": "1",
+                      "value": "go"
+                    },
+                    {
+                      "id": "2",
+                      "value": "next"
+                    },
+                    {
+                      "id": "3",
+                      "value": "search"
+                    },
+                    {
+                      "id": "4",
+                      "value": "send"
+                    }
                   ]
                 }
               ]
@@ -159,7 +167,17 @@
             {
               "id": "FPWFT_getAttrsButton",
               "type": "button",
-              "title": "get attrs"
+              "title": "attrs"
+            },
+            {
+              "id": "FPWFT_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "FPWFT_blurButton",
+              "type": "button",
+              "title": "blur"
             }
           ]
         },
@@ -195,7 +213,17 @@
             {
               "id": "FFFT_getAttrsButton",
               "type": "button",
-              "title": "get attrs"
+              "title": "attrs"
+            },
+            {
+              "id": "FFFT_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "FFFT_blurButton",
+              "type": "button",
+              "title": "blur"
             }
           ]
         },
@@ -236,7 +264,17 @@
             {
               "id": "OPWFT_getAttrsButton",
               "type": "button",
-              "title": "get attrs"
+              "title": "attrs"
+            },
+            {
+              "id": "OPWFT_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "OPWFT_blurButton",
+              "type": "button",
+              "title": "blur"
             }
           ]
         },
@@ -272,7 +310,17 @@
             {
               "id": "OFFT_getAttrsButton",
               "type": "button",
-              "title": "get attrs"
+              "title": "attrs"
+            },
+            {
+              "id": "OFFT_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "OFFT_blurButton",
+              "type": "button",
+              "title": "blur"
             }
           ]
         },
