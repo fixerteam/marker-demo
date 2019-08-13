@@ -234,204 +234,210 @@
           ]
         },
         {
-          "id": "F_input",
-          "type": "input",
-          "isFloatingTitle": false,
-          "title": "title",
-          "styles": [
-            "default_input_style"
-          ]
-        },
-        {
-          "type": "label",
-          "value": "kind: flat, custom styles",
-          "styles": [
-            "margin_vertical_16"
-          ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "styles": [
-            "margin_vertical_8"
-          ],
+          "id": "form",
+          "type": "form",
           "elements": [
             {
-              "id": "FC_valueButton",
-              "type": "button",
-              "title": "value"
+              "id": "F_input",
+              "type": "input",
+              "isFloatingTitle": false,
+              "title": "title",
+              "styles": [
+                "default_input_style"
+              ]
             },
             {
-              "id": "FC_getAttrsButton",
-              "type": "button",
-              "title": "attrs"
+              "type": "label",
+              "value": "kind: flat, custom styles",
+              "styles": [
+                "margin_vertical_16"
+              ]
             },
             {
-              "id": "FC_focusButton",
-              "type": "button",
-              "title": "focus"
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "margin_vertical_8"
+              ],
+              "elements": [
+                {
+                  "id": "FC_valueButton",
+                  "type": "button",
+                  "title": "value"
+                },
+                {
+                  "id": "FC_getAttrsButton",
+                  "type": "button",
+                  "title": "attrs"
+                },
+                {
+                  "id": "FC_focusButton",
+                  "type": "button",
+                  "title": "focus"
+                },
+                {
+                  "id": "FC_blurButton",
+                  "type": "button",
+                  "title": "blur"
+                }
+              ]
             },
             {
-              "id": "FC_blurButton",
-              "type": "button",
-              "title": "blur"
+              "id": "FC_input",
+              "type": "input",
+              "title": "title",
+              "styles": [
+                "default_input_style"
+              ],
+              "activeStyles": [
+                "default_input_active_style"
+              ],
+              "disabledStyles": [
+                "default_input_disabled_style"
+              ]
+            },
+            {
+              "type": "label",
+              "value": "isFloatingLabel: true, kind: outlined",
+              "styles": [
+                "margin_vertical_16"
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "margin_vertical_8"
+              ],
+              "elements": [
+                {
+                  "id": "FO_valueButton",
+                  "type": "button",
+                  "title": "value"
+                },
+                {
+                  "id": "FO_getAttrsButton",
+                  "type": "button",
+                  "title": "attrs"
+                },
+                {
+                  "id": "FO_focusButton",
+                  "type": "button",
+                  "title": "focus"
+                },
+                {
+                  "id": "FO_blurButton",
+                  "type": "button",
+                  "title": "blur"
+                }
+              ]
+            },
+            {
+              "id": "FO_input",
+              "type": "input",
+              "kind": "outlined",
+              "title": "title",
+              "styles": [
+                "default_input_style"
+              ]
+            },
+            {
+              "type": "label",
+              "value": "isFloatingLabel: false, kind: outlined",
+              "styles": [
+                "margin_vertical_16"
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "margin_vertical_8"
+              ],
+              "elements": [
+                {
+                  "id": "O_valueButton",
+                  "type": "button",
+                  "title": "value"
+                },
+                {
+                  "id": "O_getAttrsButton",
+                  "type": "button",
+                  "title": "attrs"
+                },
+                {
+                  "id": "O_focusButton",
+                  "type": "button",
+                  "title": "focus"
+                },
+                {
+                  "id": "O_blurButton",
+                  "type": "button",
+                  "title": "blur"
+                }
+              ]
+            },
+            {
+              "id": "O_input",
+              "type": "input",
+              "kind": "outlined",
+              "title": "title",
+              "isFloatingTitle": false,
+              "styles": [
+                "default_input_style"
+              ]
+            },
+            {
+              "type": "label",
+              "value": "kind: outlined, custom styles",
+              "styles": [
+                "margin_vertical_16"
+              ]
+            },
+            {
+              "type": "view",
+              "orientation": "horizontal",
+              "styles": [
+                "margin_vertical_8"
+              ],
+              "elements": [
+                {
+                  "id": "OC_valueButton",
+                  "type": "button",
+                  "title": "value"
+                },
+                {
+                  "id": "OC_getAttrsButton",
+                  "type": "button",
+                  "title": "attrs"
+                },
+                {
+                  "id": "OC_focusButton",
+                  "type": "button",
+                  "title": "focus"
+                },
+                {
+                  "id": "OC_blurButton",
+                  "type": "button",
+                  "title": "blur"
+                }
+              ]
+            },
+            {
+              "id": "OC_input",
+              "type": "input",
+              "kind": "outlined",
+              "title": "title",
+              "styles": [
+                "default_input_style"
+              ],
+              "activeStyles": [
+                "default_input_active_style"
+              ],
+              "disabledStyles": [
+                "default_input_disabled_style"
+              ]
             }
-          ]
-        },
-        {
-          "id": "FC_input",
-          "type": "input",
-          "title": "title",
-          "styles": [
-            "default_input_style"
-          ],
-          "activeStyles": [
-            "default_input_active_style"
-          ],
-          "disabledStyles": [
-            "default_input_disabled_style"
-          ]
-        },
-        {
-          "type": "label",
-          "value": "isFloatingLabel: true, kind: outlined",
-          "styles": [
-            "margin_vertical_16"
-          ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "styles": [
-            "margin_vertical_8"
-          ],
-          "elements": [
-            {
-              "id": "FO_valueButton",
-              "type": "button",
-              "title": "value"
-            },
-            {
-              "id": "FO_getAttrsButton",
-              "type": "button",
-              "title": "attrs"
-            },
-            {
-              "id": "FO_focusButton",
-              "type": "button",
-              "title": "focus"
-            },
-            {
-              "id": "FO_blurButton",
-              "type": "button",
-              "title": "blur"
-            }
-          ]
-        },
-        {
-          "id": "FO_input",
-          "type": "input",
-          "kind": "outlined",
-          "title": "title",
-          "styles": [
-            "default_input_style"
-          ]
-        },
-        {
-          "type": "label",
-          "value": "isFloatingLabel: false, kind: outlined",
-          "styles": [
-            "margin_vertical_16"
-          ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "styles": [
-            "margin_vertical_8"
-          ],
-          "elements": [
-            {
-              "id": "O_valueButton",
-              "type": "button",
-              "title": "value"
-            },
-            {
-              "id": "O_getAttrsButton",
-              "type": "button",
-              "title": "attrs"
-            },
-            {
-              "id": "O_focusButton",
-              "type": "button",
-              "title": "focus"
-            },
-            {
-              "id": "O_blurButton",
-              "type": "button",
-              "title": "blur"
-            }
-          ]
-        },
-        {
-          "id": "O_input",
-          "type": "input",
-          "kind": "outlined",
-          "title": "title",
-          "isFloatingTitle": false,
-          "styles": [
-            "default_input_style"
-          ]
-        },
-        {
-          "type": "label",
-          "value": "kind: outlined, custom styles",
-          "styles": [
-            "margin_vertical_16"
-          ]
-        },
-        {
-          "type": "view",
-          "orientation": "horizontal",
-          "styles": [
-            "margin_vertical_8"
-          ],
-          "elements": [
-            {
-              "id": "OC_valueButton",
-              "type": "button",
-              "title": "value"
-            },
-            {
-              "id": "OC_getAttrsButton",
-              "type": "button",
-              "title": "attrs"
-            },
-            {
-              "id": "OC_focusButton",
-              "type": "button",
-              "title": "focus"
-            },
-            {
-              "id": "OC_blurButton",
-              "type": "button",
-              "title": "blur"
-            }
-          ]
-        },
-        {
-          "id": "OC_input",
-          "type": "input",
-          "kind": "outlined",
-          "title": "title",
-          "styles": [
-            "default_input_style"
-          ],
-          "activeStyles": [
-            "default_input_active_style"
-          ],
-          "disabledStyles": [
-            "default_input_disabled_style"
           ]
         }
       ]
