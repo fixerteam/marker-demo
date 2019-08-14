@@ -11,6 +11,7 @@
       "nestedScreen": "AppbarBlock"
     },
     {
+      "id": "scrollView",
       "type": "view",
       "orientation": "vertical",
       "scrollable": true,
