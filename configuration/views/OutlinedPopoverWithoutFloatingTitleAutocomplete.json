@@ -4,6 +4,7 @@
   "title": "{startTyping}",
   "isFloatingTitle": false,
   "kind": "outlined",
+  "nextFocusId": "OutlinedFixedWithFloatingTitleAutocomplete",
   "styles": [
     "default_input_style"
   ],

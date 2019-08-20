@@ -4,6 +4,7 @@
   "title": "{startTyping}",
   "kind": "flat",
   "mode": "fixed",
+  "nextFocusId": "OutlinedPopoverWithoutFloatingTitleAutocomplete",
   "styles": [
     "default_input_style"
   ],
