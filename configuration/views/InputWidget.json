@@ -156,6 +156,51 @@
         },
         {
           "type": "label",
+          "value": "kind: simple",
+          "styles": [
+            "margin_vertical_16"
+          ]
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "margin_vertical_8"
+          ],
+          "elements": [
+            {
+              "id": "S_valueButton",
+              "type": "button",
+              "title": "value"
+            },
+            {
+              "id": "S_getAttrsButton",
+              "type": "button",
+              "title": "attrs"
+            },
+            {
+              "id": "S_focusButton",
+              "type": "button",
+              "title": "focus"
+            },
+            {
+              "id": "S_blurButton",
+              "type": "button",
+              "title": "blur"
+            }
+          ]
+        },
+        {
+          "id": "S_input",
+          "type": "input",
+          "title": "title",
+          "kind": "simple",
+          "styles": [
+            "default_input_style"
+          ]
+        },
+        {
+          "type": "label",
           "value": "isFloatingLabel: true, kind: flat",
           "styles": [
             "margin_vertical_16"

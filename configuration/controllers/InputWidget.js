@@ -1,5 +1,12 @@
 const INPUT_BLOCKS = [
   {
+    inputId: 'S_input',
+    valueButtonId: 'S_valueButton',
+    attrsButtonId: 'S_getAttrsButton',
+    focusButtonId: 'S_focusButton',
+    blurButtonId: 'S_blurButton'
+  },
+  {
     inputId: 'FF_input',
     valueButtonId: 'FF_valueButton',
     attrsButtonId: 'FF_getAttrsButton',
