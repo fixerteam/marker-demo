@@ -28,6 +28,14 @@ class ButtonWidget {
     this.bindTitleRadioGroup()
   }
 
+  onResume() {
+    this.notifier.snackbar({ msg: 'Resumed' })
+  }
+
+  onPause() {
+    this.notifier.snackbar({ msg: 'Paused' })
+  }
+
   bindAppbar() {
     const appbar = this.view.getComponent('AppbarBlock')
     appbar.onLeftIconClick(() => this.navigator.pop())

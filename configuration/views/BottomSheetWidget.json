@@ -1,0 +1,114 @@
+{
+  "name": "BottomSheetWidget",
+  "type": "view",
+  "public": true,
+  "styles": [
+    "match_parent"
+  ],
+  "elements": [
+    {
+      "type": "container",
+      "nestedScreen": "AppbarBlock"
+    },
+    {
+      "type": "view",
+      "align": "center_top",
+      "styles": [
+        "match_parent"
+      ],
+      "elements": [
+        {
+          "id": "openDocLabel",
+          "type": "label",
+          "value": "{docLink}",
+          "styles": [
+            "label_link"
+          ]
+        },
+        {
+          "type": "label",
+          "align": "center",
+          "value": "{bottomSheetDescription}"
+        },
+        {
+          "type": "view",
+          "orientation": "horizontal",
+          "styles": [
+            "width_full",
+            "padding_all_16",
+            "margin_vertical_8",
+            "space_between",
+            {
+              "self": [
+                {
+                  "borderWidth": 1,
+                  "borderRadius": 5,
+                  "backgroundColor": "#f3f3f3"
+                }
+              ]
+            }
+          ],
+          "elements": [
+            {
+              "id": "screenRadioGroup",
+              "type": "radiogroup",
+              "data": [
+                {
+                  "id": "0",
+                  "value": "ButtonWidget",
+                  "title": "screen 1"
+                },
+                {
+                  "id": "1",
+                  "value": "ListWidget",
+                  "title": "screen 2"
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "id": "openButton",
+                  "type": "button",
+                  "title": "open"
+                },
+                {
+                  "id": "open2Button",
+                  "type": "button",
+                  "title": "open 2"
+                }
+              ]
+            },
+            {
+              "type": "view",
+              "elements": [
+                {
+                  "id": "open3Button",
+                  "type": "button",
+                  "title": "open 3"
+                },
+                {
+                  "id": "closeButton",
+                  "type": "button",
+                  "title": "close"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bottomSheet",
+          "type": "bottomsheet",
+          "screen": "ButtonWidget",
+          "snapPoints": [
+            0,
+            100,
+            "30%",
+            "50%"
+          ]
+        }
+      ]
+    }
+  ]
+}

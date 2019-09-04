@@ -43,6 +43,15 @@
         "id": "autocompleteWidget"
       },
       {
+        "name": "BottomSheet",
+        "screen": "BottomSheetWidget",
+        "compatibility": {
+          "ios": true,
+          "android": true
+        },
+        "id": "bottomSheetWidget"
+      },
+      {
         "name": "Button",
         "screen": "ButtonWidget",
         "compatibility": {
