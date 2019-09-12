@@ -20,42 +20,50 @@ class DefaultList {
     const appbar = this.view.getComponent('AppbarBlock')
     appbar.onLeftIconClick(() => this.navigator.pop())
     appbar.setAttrs({ title })
+    appbar.onMenuItemClick(id => {
+      if (id === 'removeItems') {
+        const listData = this.list.data // only for this case
+        if (listData.length > 1) {
+          this.list.removeData([listData[0].id, listData[1].id])
+        }
+      }
+    })
   }
 
   async bindList(id) {
-    const list = this.view.getComponent(id)
-    list.setAttrs({ visibility: true })
+    this.list = this.view.getComponent(id)
+    this.list.setAttrs({ visibility: true })
     switch (id) {
       case 'h_refreshable':
       case 'refreshable': {
-        this.setListRefresh(list)
+        this.setListRefresh(this.list)
         break
       }
       case 'h_paging':
       case 'paging': {
-        this.setListData(list)
-        this.setListRefresh(list)
-        this.setListPaging(list, 10)
+        this.setListData(this.list)
+        this.setListRefresh(this.list)
+        this.setListPaging(this.list, 10)
         break
       }
       case 'h_large':
       case 'large': {
-        this.setListData(list)
-        this.setListRefresh(list)
-        this.setListPaging(list, 50)
+        this.setListData(this.list)
+        this.setListRefresh(this.list)
+        this.setListPaging(this.list, 50)
         break
       }
       case 'h_virtualizationOff':
       case 'virtualizationOff': {
-        this.setListData(list)
-        this.setListRefresh(list)
-        this.setListPaging(list, 50)
+        this.setListData(this.list)
+        this.setListRefresh(this.list)
+        this.setListPaging(this.list, 50)
         break
       }
       case 'separatedColumns': {
-        this.setListData(list)
-        this.setListRefresh(list)
-        this.setListPaging(list, 50)
+        this.setListData(this.list)
+        this.setListRefresh(this.list)
+        this.setListPaging(this.list, 50)
         break
       }
       default:

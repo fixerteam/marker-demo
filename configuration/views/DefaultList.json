@@ -7,8 +7,19 @@
   ],
   "elements": [
     {
-      "type": "container",
-      "nestedScreen": "AppbarBlock"
+      "id": "AppbarBlock",
+      "type": "appbar",
+      "leftIcon": "arrow-left",
+      "styles": [
+        "appbar_title_center"
+      ],
+      "elements": [
+        {
+          "id": "removeItems",
+          "displayType": "icon",
+          "icon": "table-row-remove"
+        }
+      ]
     },
     {
       "id": "default",
